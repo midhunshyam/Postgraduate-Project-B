@@ -1,0 +1,2257 @@
+Loading PyTorch/Python3.10
+  Loading requirement: Python/Python3.10 cuda/cuda-11.2
+True
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1000 entries, 5628 to 22673
+Data columns (total 3 columns):
+ #   Column   Non-Null Count  Dtype  
+---  ------   --------------  -----  
+ 0   HADM_ID  1000 non-null   float64
+ 1   text     1000 non-null   object 
+ 2   label    1000 non-null   int64  
+dtypes: float64(1), int64(1), object(1)
+memory usage: 31.2+ KB
+Dataset info: 
+ None
+Dataset first 5 rows: 
+         HADM_ID                                               text  label
+5628   132548.0  their father is in hosp after being in car acc...      1
+19103  139953.0  INDICATION: 30-year-old man status post motorc...      1
+42180  185919.0  TSICU HPI: 78F on coumadin s/p mech fall, hitt...      0
+3340   100260.0  60 male restrained driver s/p rear end mvc on ...      1
+43787  198475.0  **2140-6-2** 9:43 AM UGI SGL W/O KUB Clip # **...      0
+Accuracy: 0.2720
+Misclassification Error Rate: 0.7280
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+     Class 0       0.07      0.04      0.05       475
+     Class 1       0.36      0.48      0.41       525
+
+    accuracy                           0.27      1000
+   macro avg       0.21      0.26      0.23      1000
+weighted avg       0.22      0.27      0.24      1000
+
+Parameter: bert.embeddings.word_embeddings.weight | Requires Grad: False
+Parameter: bert.embeddings.position_embeddings.weight | Requires Grad: False
+Parameter: bert.embeddings.token_type_embeddings.weight | Requires Grad: False
+Parameter: bert.embeddings.LayerNorm.weight | Requires Grad: False
+Parameter: bert.embeddings.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.0.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.0.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.1.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.1.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.2.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.2.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.3.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.3.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.4.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.4.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.5.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.5.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.6.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.6.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.7.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.7.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.8.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.8.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.9.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.9.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.10.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.10.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.query.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.query.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.key.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.key.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.value.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.self.value.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.attention.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.intermediate.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.intermediate.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.output.dense.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.output.dense.bias | Requires Grad: False
+Parameter: bert.encoder.layer.11.output.LayerNorm.weight | Requires Grad: False
+Parameter: bert.encoder.layer.11.output.LayerNorm.bias | Requires Grad: False
+Parameter: bert.pooler.dense.weight | Requires Grad: False
+Parameter: bert.pooler.dense.bias | Requires Grad: False
+Parameter: classifier.weight | Requires Grad: True
+Parameter: classifier.bias | Requires Grad: True
+True
+Epoch 1/2003 completed. Loss: 0.7160
+Epoch 2/2003 completed. Loss: 0.6784
+Epoch 3/2003 completed. Loss: 0.6478
+Epoch 4/2003 completed. Loss: 0.6205
+Epoch 5/2003 completed. Loss: 0.5984
+Epoch 6/2003 completed. Loss: 0.5713
+Epoch 7/2003 completed. Loss: 0.5556
+Epoch 8/2003 completed. Loss: 0.5483
+Epoch 9/2003 completed. Loss: 0.5404
+Epoch 10/2003 completed. Loss: 0.5158
+Epoch 11/2003 completed. Loss: 0.5083
+Epoch 12/2003 completed. Loss: 0.5022
+Epoch 13/2003 completed. Loss: 0.4883
+Epoch 14/2003 completed. Loss: 0.4804
+Epoch 15/2003 completed. Loss: 0.4714
+Epoch 16/2003 completed. Loss: 0.4730
+Epoch 17/2003 completed. Loss: 0.4594
+Epoch 18/2003 completed. Loss: 0.4571
+Epoch 19/2003 completed. Loss: 0.4554
+Epoch 20/2003 completed. Loss: 0.4466
+Epoch 21/2003 completed. Loss: 0.4483
+Epoch 22/2003 completed. Loss: 0.4177
+Epoch 23/2003 completed. Loss: 0.4295
+Epoch 24/2003 completed. Loss: 0.4244
+Epoch 25/2003 completed. Loss: 0.4275
+Epoch 26/2003 completed. Loss: 0.4246
+Epoch 27/2003 completed. Loss: 0.4189
+Epoch 28/2003 completed. Loss: 0.4185
+Epoch 29/2003 completed. Loss: 0.4239
+Epoch 30/2003 completed. Loss: 0.4017
+Epoch 31/2003 completed. Loss: 0.4028
+Epoch 32/2003 completed. Loss: 0.4007
+Epoch 33/2003 completed. Loss: 0.3964
+Epoch 34/2003 completed. Loss: 0.4005
+Epoch 35/2003 completed. Loss: 0.3952
+Epoch 36/2003 completed. Loss: 0.3861
+Epoch 37/2003 completed. Loss: 0.3846
+Epoch 38/2003 completed. Loss: 0.3772
+Epoch 39/2003 completed. Loss: 0.3798
+Epoch 40/2003 completed. Loss: 0.3757
+Epoch 41/2003 completed. Loss: 0.3749
+Epoch 42/2003 completed. Loss: 0.3713
+Epoch 43/2003 completed. Loss: 0.3620
+Epoch 44/2003 completed. Loss: 0.3673
+Epoch 45/2003 completed. Loss: 0.3630
+Epoch 46/2003 completed. Loss: 0.3576
+Epoch 47/2003 completed. Loss: 0.3574
+Epoch 48/2003 completed. Loss: 0.3512
+Epoch 49/2003 completed. Loss: 0.3568
+Epoch 50/2003 completed. Loss: 0.3515
+Epoch 51/2003 completed. Loss: 0.3578
+Epoch 52/2003 completed. Loss: 0.3422
+Epoch 53/2003 completed. Loss: 0.3441
+Epoch 54/2003 completed. Loss: 0.3507
+Epoch 55/2003 completed. Loss: 0.3431
+Epoch 56/2003 completed. Loss: 0.3440
+Epoch 57/2003 completed. Loss: 0.3363
+Epoch 58/2003 completed. Loss: 0.3440
+Epoch 59/2003 completed. Loss: 0.3304
+Epoch 60/2003 completed. Loss: 0.3266
+Epoch 61/2003 completed. Loss: 0.3299
+Epoch 62/2003 completed. Loss: 0.3270
+Epoch 63/2003 completed. Loss: 0.3174
+Epoch 64/2003 completed. Loss: 0.3283
+Epoch 65/2003 completed. Loss: 0.3141
+Epoch 66/2003 completed. Loss: 0.3173
+Epoch 67/2003 completed. Loss: 0.3196
+Epoch 68/2003 completed. Loss: 0.3241
+Epoch 69/2003 completed. Loss: 0.3110
+Epoch 70/2003 completed. Loss: 0.3204
+Epoch 71/2003 completed. Loss: 0.3103
+Epoch 72/2003 completed. Loss: 0.3130
+Epoch 73/2003 completed. Loss: 0.3122
+Epoch 74/2003 completed. Loss: 0.3023
+Epoch 75/2003 completed. Loss: 0.3009
+Epoch 76/2003 completed. Loss: 0.3032
+Epoch 77/2003 completed. Loss: 0.3014
+Epoch 78/2003 completed. Loss: 0.2982
+Epoch 79/2003 completed. Loss: 0.2984
+Epoch 80/2003 completed. Loss: 0.2900
+Epoch 81/2003 completed. Loss: 0.2982
+Epoch 82/2003 completed. Loss: 0.2870
+Epoch 83/2003 completed. Loss: 0.2813
+Epoch 84/2003 completed. Loss: 0.2879
+Epoch 85/2003 completed. Loss: 0.2779
+Epoch 86/2003 completed. Loss: 0.2803
+Epoch 87/2003 completed. Loss: 0.2837
+Epoch 88/2003 completed. Loss: 0.2854
+Epoch 89/2003 completed. Loss: 0.2753
+Epoch 90/2003 completed. Loss: 0.2723
+Epoch 91/2003 completed. Loss: 0.2695
+Epoch 92/2003 completed. Loss: 0.2810
+Epoch 93/2003 completed. Loss: 0.2729
+Epoch 94/2003 completed. Loss: 0.2732
+Epoch 95/2003 completed. Loss: 0.2652
+Epoch 96/2003 completed. Loss: 0.2695
+Epoch 97/2003 completed. Loss: 0.2653
+Epoch 98/2003 completed. Loss: 0.2577
+Epoch 99/2003 completed. Loss: 0.2630
+Epoch 100/2003 completed. Loss: 0.2613
+Epoch 101/2003 completed. Loss: 0.2528
+Epoch 102/2003 completed. Loss: 0.2594
+Epoch 103/2003 completed. Loss: 0.2640
+Epoch 104/2003 completed. Loss: 0.2612
+Epoch 105/2003 completed. Loss: 0.2468
+Epoch 106/2003 completed. Loss: 0.2484
+Epoch 107/2003 completed. Loss: 0.2494
+Epoch 108/2003 completed. Loss: 0.2468
+Epoch 109/2003 completed. Loss: 0.2538
+Epoch 110/2003 completed. Loss: 0.2536
+Epoch 111/2003 completed. Loss: 0.2559
+Epoch 112/2003 completed. Loss: 0.2442
+Epoch 113/2003 completed. Loss: 0.2400
+Epoch 114/2003 completed. Loss: 0.2421
+Epoch 115/2003 completed. Loss: 0.2410
+Epoch 116/2003 completed. Loss: 0.2497
+Epoch 117/2003 completed. Loss: 0.2387
+Epoch 118/2003 completed. Loss: 0.2345
+Epoch 119/2003 completed. Loss: 0.2255
+Epoch 120/2003 completed. Loss: 0.2366
+Epoch 121/2003 completed. Loss: 0.2384
+Epoch 122/2003 completed. Loss: 0.2387
+Epoch 123/2003 completed. Loss: 0.2355
+Epoch 124/2003 completed. Loss: 0.2284
+Epoch 125/2003 completed. Loss: 0.2324
+Epoch 126/2003 completed. Loss: 0.2318
+Epoch 127/2003 completed. Loss: 0.2254
+Epoch 128/2003 completed. Loss: 0.2411
+Epoch 129/2003 completed. Loss: 0.2210
+Epoch 130/2003 completed. Loss: 0.2297
+Epoch 131/2003 completed. Loss: 0.2245
+Epoch 132/2003 completed. Loss: 0.2191
+Epoch 133/2003 completed. Loss: 0.2312
+Epoch 134/2003 completed. Loss: 0.2212
+Epoch 135/2003 completed. Loss: 0.2161
+Epoch 136/2003 completed. Loss: 0.2218
+Epoch 137/2003 completed. Loss: 0.2209
+Epoch 138/2003 completed. Loss: 0.2204
+Epoch 139/2003 completed. Loss: 0.2183
+Epoch 140/2003 completed. Loss: 0.2107
+Epoch 141/2003 completed. Loss: 0.2093
+Epoch 142/2003 completed. Loss: 0.2121
+Epoch 143/2003 completed. Loss: 0.2129
+Epoch 144/2003 completed. Loss: 0.2092
+Epoch 145/2003 completed. Loss: 0.2109
+Epoch 146/2003 completed. Loss: 0.2133
+Epoch 147/2003 completed. Loss: 0.2163
+Epoch 148/2003 completed. Loss: 0.2057
+Epoch 149/2003 completed. Loss: 0.2083
+Epoch 150/2003 completed. Loss: 0.2011
+Epoch 151/2003 completed. Loss: 0.2036
+Epoch 152/2003 completed. Loss: 0.2048
+Epoch 153/2003 completed. Loss: 0.2032
+Epoch 154/2003 completed. Loss: 0.2049
+Epoch 155/2003 completed. Loss: 0.2008
+Epoch 156/2003 completed. Loss: 0.2037
+Epoch 157/2003 completed. Loss: 0.1990
+Epoch 158/2003 completed. Loss: 0.1985
+Epoch 159/2003 completed. Loss: 0.2049
+Epoch 160/2003 completed. Loss: 0.2059
+Epoch 161/2003 completed. Loss: 0.1949
+Epoch 162/2003 completed. Loss: 0.2019
+Epoch 163/2003 completed. Loss: 0.1882
+Epoch 164/2003 completed. Loss: 0.1926
+Epoch 165/2003 completed. Loss: 0.1933
+Epoch 166/2003 completed. Loss: 0.1876
+Epoch 167/2003 completed. Loss: 0.1978
+Epoch 168/2003 completed. Loss: 0.1872
+Epoch 169/2003 completed. Loss: 0.1893
+Epoch 170/2003 completed. Loss: 0.1965
+Epoch 171/2003 completed. Loss: 0.1854
+Epoch 172/2003 completed. Loss: 0.1813
+Epoch 173/2003 completed. Loss: 0.1894
+Epoch 174/2003 completed. Loss: 0.1815
+Epoch 175/2003 completed. Loss: 0.1838
+Epoch 176/2003 completed. Loss: 0.1844
+Epoch 177/2003 completed. Loss: 0.1836
+Epoch 178/2003 completed. Loss: 0.1811
+Epoch 179/2003 completed. Loss: 0.1818
+Epoch 180/2003 completed. Loss: 0.1872
+Epoch 181/2003 completed. Loss: 0.1835
+Epoch 182/2003 completed. Loss: 0.1737
+Epoch 183/2003 completed. Loss: 0.1799
+Epoch 184/2003 completed. Loss: 0.1841
+Epoch 185/2003 completed. Loss: 0.1828
+Epoch 186/2003 completed. Loss: 0.1789
+Epoch 187/2003 completed. Loss: 0.1813
+Epoch 188/2003 completed. Loss: 0.1771
+Epoch 189/2003 completed. Loss: 0.1835
+Epoch 190/2003 completed. Loss: 0.1806
+Epoch 191/2003 completed. Loss: 0.1796
+Epoch 192/2003 completed. Loss: 0.1748
+Epoch 193/2003 completed. Loss: 0.1752
+Epoch 194/2003 completed. Loss: 0.1743
+Epoch 195/2003 completed. Loss: 0.1726
+Epoch 196/2003 completed. Loss: 0.1723
+Epoch 197/2003 completed. Loss: 0.1708
+Epoch 198/2003 completed. Loss: 0.1666
+Epoch 199/2003 completed. Loss: 0.1751
+Epoch 200/2003 completed. Loss: 0.1766
+Epoch 201/2003 completed. Loss: 0.1709
+Epoch 202/2003 completed. Loss: 0.1709
+Epoch 203/2003 completed. Loss: 0.1632
+Epoch 204/2003 completed. Loss: 0.1667
+Epoch 205/2003 completed. Loss: 0.1686
+Epoch 206/2003 completed. Loss: 0.1615
+Epoch 207/2003 completed. Loss: 0.1607
+Epoch 208/2003 completed. Loss: 0.1705
+Epoch 209/2003 completed. Loss: 0.1560
+Epoch 210/2003 completed. Loss: 0.1674
+Epoch 211/2003 completed. Loss: 0.1662
+Epoch 212/2003 completed. Loss: 0.1640
+Epoch 213/2003 completed. Loss: 0.1692
+Epoch 214/2003 completed. Loss: 0.1684
+Epoch 215/2003 completed. Loss: 0.1618
+Epoch 216/2003 completed. Loss: 0.1650
+Epoch 217/2003 completed. Loss: 0.1638
+Epoch 218/2003 completed. Loss: 0.1552
+Epoch 219/2003 completed. Loss: 0.1633
+Epoch 220/2003 completed. Loss: 0.1564
+Epoch 221/2003 completed. Loss: 0.1570
+Epoch 222/2003 completed. Loss: 0.1573
+Epoch 223/2003 completed. Loss: 0.1554
+Epoch 224/2003 completed. Loss: 0.1617
+Epoch 225/2003 completed. Loss: 0.1654
+Epoch 226/2003 completed. Loss: 0.1528
+Epoch 227/2003 completed. Loss: 0.1579
+Epoch 228/2003 completed. Loss: 0.1520
+Epoch 229/2003 completed. Loss: 0.1603
+Epoch 230/2003 completed. Loss: 0.1545
+Epoch 231/2003 completed. Loss: 0.1594
+Epoch 232/2003 completed. Loss: 0.1556
+Epoch 233/2003 completed. Loss: 0.1594
+Epoch 234/2003 completed. Loss: 0.1590
+Epoch 235/2003 completed. Loss: 0.1565
+Epoch 236/2003 completed. Loss: 0.1522
+Epoch 237/2003 completed. Loss: 0.1506
+Epoch 238/2003 completed. Loss: 0.1476
+Epoch 239/2003 completed. Loss: 0.1530
+Epoch 240/2003 completed. Loss: 0.1515
+Epoch 241/2003 completed. Loss: 0.1514
+Epoch 242/2003 completed. Loss: 0.1542
+Epoch 243/2003 completed. Loss: 0.1523
+Epoch 244/2003 completed. Loss: 0.1513
+Epoch 245/2003 completed. Loss: 0.1531
+Epoch 246/2003 completed. Loss: 0.1473
+Epoch 247/2003 completed. Loss: 0.1494
+Epoch 248/2003 completed. Loss: 0.1464
+Epoch 249/2003 completed. Loss: 0.1490
+Epoch 250/2003 completed. Loss: 0.1503
+Epoch 251/2003 completed. Loss: 0.1475
+Epoch 252/2003 completed. Loss: 0.1359
+Epoch 253/2003 completed. Loss: 0.1395
+Epoch 254/2003 completed. Loss: 0.1490
+Epoch 255/2003 completed. Loss: 0.1414
+Epoch 256/2003 completed. Loss: 0.1456
+Epoch 257/2003 completed. Loss: 0.1475
+Epoch 258/2003 completed. Loss: 0.1396
+Epoch 259/2003 completed. Loss: 0.1435
+Epoch 260/2003 completed. Loss: 0.1485
+Epoch 261/2003 completed. Loss: 0.1386
+Epoch 262/2003 completed. Loss: 0.1381
+Epoch 263/2003 completed. Loss: 0.1384
+Epoch 264/2003 completed. Loss: 0.1349
+Epoch 265/2003 completed. Loss: 0.1412
+Epoch 266/2003 completed. Loss: 0.1345
+Epoch 267/2003 completed. Loss: 0.1397
+Epoch 268/2003 completed. Loss: 0.1470
+Epoch 269/2003 completed. Loss: 0.1361
+Epoch 270/2003 completed. Loss: 0.1418
+Epoch 271/2003 completed. Loss: 0.1379
+Epoch 272/2003 completed. Loss: 0.1433
+Epoch 273/2003 completed. Loss: 0.1384
+Epoch 274/2003 completed. Loss: 0.1396
+Epoch 275/2003 completed. Loss: 0.1352
+Epoch 276/2003 completed. Loss: 0.1395
+Epoch 277/2003 completed. Loss: 0.1325
+Epoch 278/2003 completed. Loss: 0.1325
+Epoch 279/2003 completed. Loss: 0.1327
+Epoch 280/2003 completed. Loss: 0.1345
+Epoch 281/2003 completed. Loss: 0.1325
+Epoch 282/2003 completed. Loss: 0.1339
+Epoch 283/2003 completed. Loss: 0.1418
+Epoch 284/2003 completed. Loss: 0.1281
+Epoch 285/2003 completed. Loss: 0.1368
+Epoch 286/2003 completed. Loss: 0.1329
+Epoch 287/2003 completed. Loss: 0.1406
+Epoch 288/2003 completed. Loss: 0.1350
+Epoch 289/2003 completed. Loss: 0.1322
+Epoch 290/2003 completed. Loss: 0.1292
+Epoch 291/2003 completed. Loss: 0.1273
+Epoch 292/2003 completed. Loss: 0.1297
+Epoch 293/2003 completed. Loss: 0.1256
+Epoch 294/2003 completed. Loss: 0.1329
+Epoch 295/2003 completed. Loss: 0.1285
+Epoch 296/2003 completed. Loss: 0.1295
+Epoch 297/2003 completed. Loss: 0.1251
+Epoch 298/2003 completed. Loss: 0.1274
+Epoch 299/2003 completed. Loss: 0.1283
+Epoch 300/2003 completed. Loss: 0.1331
+Epoch 301/2003 completed. Loss: 0.1290
+Epoch 302/2003 completed. Loss: 0.1277
+Epoch 303/2003 completed. Loss: 0.1259
+Epoch 304/2003 completed. Loss: 0.1277
+Epoch 305/2003 completed. Loss: 0.1254
+Epoch 306/2003 completed. Loss: 0.1238
+Epoch 307/2003 completed. Loss: 0.1220
+Epoch 308/2003 completed. Loss: 0.1219
+Epoch 309/2003 completed. Loss: 0.1291
+Epoch 310/2003 completed. Loss: 0.1300
+Epoch 311/2003 completed. Loss: 0.1247
+Epoch 312/2003 completed. Loss: 0.1266
+Epoch 313/2003 completed. Loss: 0.1329
+Epoch 314/2003 completed. Loss: 0.1299
+Epoch 315/2003 completed. Loss: 0.1261
+Epoch 316/2003 completed. Loss: 0.1241
+Epoch 317/2003 completed. Loss: 0.1231
+Epoch 318/2003 completed. Loss: 0.1225
+Epoch 319/2003 completed. Loss: 0.1188
+Epoch 320/2003 completed. Loss: 0.1246
+Epoch 321/2003 completed. Loss: 0.1240
+Epoch 322/2003 completed. Loss: 0.1208
+Epoch 323/2003 completed. Loss: 0.1249
+Epoch 324/2003 completed. Loss: 0.1270
+Epoch 325/2003 completed. Loss: 0.1276
+Epoch 326/2003 completed. Loss: 0.1169
+Epoch 327/2003 completed. Loss: 0.1201
+Epoch 328/2003 completed. Loss: 0.1200
+Epoch 329/2003 completed. Loss: 0.1205
+Epoch 330/2003 completed. Loss: 0.1229
+Epoch 331/2003 completed. Loss: 0.1215
+Epoch 332/2003 completed. Loss: 0.1200
+Epoch 333/2003 completed. Loss: 0.1180
+Epoch 334/2003 completed. Loss: 0.1224
+Epoch 335/2003 completed. Loss: 0.1200
+Epoch 336/2003 completed. Loss: 0.1164
+Epoch 337/2003 completed. Loss: 0.1140
+Epoch 338/2003 completed. Loss: 0.1213
+Epoch 339/2003 completed. Loss: 0.1186
+Epoch 340/2003 completed. Loss: 0.1193
+Epoch 341/2003 completed. Loss: 0.1178
+Epoch 342/2003 completed. Loss: 0.1210
+Epoch 343/2003 completed. Loss: 0.1189
+Epoch 344/2003 completed. Loss: 0.1183
+Epoch 345/2003 completed. Loss: 0.1148
+Epoch 346/2003 completed. Loss: 0.1178
+Epoch 347/2003 completed. Loss: 0.1145
+Epoch 348/2003 completed. Loss: 0.1182
+Epoch 349/2003 completed. Loss: 0.1189
+Epoch 350/2003 completed. Loss: 0.1182
+Epoch 351/2003 completed. Loss: 0.1167
+Epoch 352/2003 completed. Loss: 0.1172
+Epoch 353/2003 completed. Loss: 0.1163
+Epoch 354/2003 completed. Loss: 0.1184
+Epoch 355/2003 completed. Loss: 0.1098
+Epoch 356/2003 completed. Loss: 0.1117
+Epoch 357/2003 completed. Loss: 0.1160
+Epoch 358/2003 completed. Loss: 0.1134
+Epoch 359/2003 completed. Loss: 0.1158
+Epoch 360/2003 completed. Loss: 0.1122
+Epoch 361/2003 completed. Loss: 0.1143
+Epoch 362/2003 completed. Loss: 0.1121
+Epoch 363/2003 completed. Loss: 0.1116
+Epoch 364/2003 completed. Loss: 0.1113
+Epoch 365/2003 completed. Loss: 0.1134
+Epoch 366/2003 completed. Loss: 0.1103
+Epoch 367/2003 completed. Loss: 0.1088
+Epoch 368/2003 completed. Loss: 0.1160
+Epoch 369/2003 completed. Loss: 0.1096
+Epoch 370/2003 completed. Loss: 0.1087
+Epoch 371/2003 completed. Loss: 0.1120
+Epoch 372/2003 completed. Loss: 0.1106
+Epoch 373/2003 completed. Loss: 0.1152
+Epoch 374/2003 completed. Loss: 0.1204
+Epoch 375/2003 completed. Loss: 0.1067
+Epoch 376/2003 completed. Loss: 0.1075
+Epoch 377/2003 completed. Loss: 0.1112
+Epoch 378/2003 completed. Loss: 0.1130
+Epoch 379/2003 completed. Loss: 0.1112
+Epoch 380/2003 completed. Loss: 0.1094
+Epoch 381/2003 completed. Loss: 0.1157
+Epoch 382/2003 completed. Loss: 0.1091
+Epoch 383/2003 completed. Loss: 0.1100
+Epoch 384/2003 completed. Loss: 0.1100
+Epoch 385/2003 completed. Loss: 0.1098
+Epoch 386/2003 completed. Loss: 0.1062
+Epoch 387/2003 completed. Loss: 0.1135
+Epoch 388/2003 completed. Loss: 0.1066
+Epoch 389/2003 completed. Loss: 0.1089
+Epoch 390/2003 completed. Loss: 0.1065
+Epoch 391/2003 completed. Loss: 0.1035
+Epoch 392/2003 completed. Loss: 0.1076
+Epoch 393/2003 completed. Loss: 0.1053
+Epoch 394/2003 completed. Loss: 0.1104
+Epoch 395/2003 completed. Loss: 0.1022
+Epoch 396/2003 completed. Loss: 0.1054
+Epoch 397/2003 completed. Loss: 0.1041
+Epoch 398/2003 completed. Loss: 0.1042
+Epoch 399/2003 completed. Loss: 0.1047
+Epoch 400/2003 completed. Loss: 0.1098
+Epoch 401/2003 completed. Loss: 0.1025
+Epoch 402/2003 completed. Loss: 0.1049
+Epoch 403/2003 completed. Loss: 0.1047
+Epoch 404/2003 completed. Loss: 0.0993
+Epoch 405/2003 completed. Loss: 0.1043
+Epoch 406/2003 completed. Loss: 0.1046
+Epoch 407/2003 completed. Loss: 0.1055
+Epoch 408/2003 completed. Loss: 0.1028
+Epoch 409/2003 completed. Loss: 0.0990
+Epoch 410/2003 completed. Loss: 0.0984
+Epoch 411/2003 completed. Loss: 0.1051
+Epoch 412/2003 completed. Loss: 0.1034
+Epoch 413/2003 completed. Loss: 0.1053
+Epoch 414/2003 completed. Loss: 0.1038
+Epoch 415/2003 completed. Loss: 0.1056
+Epoch 416/2003 completed. Loss: 0.1032
+Epoch 417/2003 completed. Loss: 0.1050
+Epoch 418/2003 completed. Loss: 0.0992
+Epoch 419/2003 completed. Loss: 0.1000
+Epoch 420/2003 completed. Loss: 0.1002
+Epoch 421/2003 completed. Loss: 0.0991
+Epoch 422/2003 completed. Loss: 0.1036
+Epoch 423/2003 completed. Loss: 0.1022
+Epoch 424/2003 completed. Loss: 0.1028
+Epoch 425/2003 completed. Loss: 0.1028
+Epoch 426/2003 completed. Loss: 0.1005
+Epoch 427/2003 completed. Loss: 0.1002
+Epoch 428/2003 completed. Loss: 0.1048
+Epoch 429/2003 completed. Loss: 0.1006
+Epoch 430/2003 completed. Loss: 0.1028
+Epoch 431/2003 completed. Loss: 0.1055
+Epoch 432/2003 completed. Loss: 0.0968
+Epoch 433/2003 completed. Loss: 0.1021
+Epoch 434/2003 completed. Loss: 0.0988
+Epoch 435/2003 completed. Loss: 0.1004
+Epoch 436/2003 completed. Loss: 0.1072
+Epoch 437/2003 completed. Loss: 0.1016
+Epoch 438/2003 completed. Loss: 0.1001
+Epoch 439/2003 completed. Loss: 0.1022
+Epoch 440/2003 completed. Loss: 0.1016
+Epoch 441/2003 completed. Loss: 0.1055
+Epoch 442/2003 completed. Loss: 0.0984
+Epoch 443/2003 completed. Loss: 0.0976
+Epoch 444/2003 completed. Loss: 0.1056
+Epoch 445/2003 completed. Loss: 0.0965
+Epoch 446/2003 completed. Loss: 0.1040
+Epoch 447/2003 completed. Loss: 0.0966
+Epoch 448/2003 completed. Loss: 0.1023
+Epoch 449/2003 completed. Loss: 0.0971
+Epoch 450/2003 completed. Loss: 0.0951
+Epoch 451/2003 completed. Loss: 0.1003
+Epoch 452/2003 completed. Loss: 0.0983
+Epoch 453/2003 completed. Loss: 0.0982
+Epoch 454/2003 completed. Loss: 0.0989
+Epoch 455/2003 completed. Loss: 0.0945
+Epoch 456/2003 completed. Loss: 0.1015
+Epoch 457/2003 completed. Loss: 0.1008
+Epoch 458/2003 completed. Loss: 0.1009
+Epoch 459/2003 completed. Loss: 0.1038
+Epoch 460/2003 completed. Loss: 0.0962
+Epoch 461/2003 completed. Loss: 0.0978
+Epoch 462/2003 completed. Loss: 0.0945
+Epoch 463/2003 completed. Loss: 0.0988
+Epoch 464/2003 completed. Loss: 0.1004
+Epoch 465/2003 completed. Loss: 0.0955
+Epoch 466/2003 completed. Loss: 0.0962
+Epoch 467/2003 completed. Loss: 0.0991
+Epoch 468/2003 completed. Loss: 0.0984
+Epoch 469/2003 completed. Loss: 0.0973
+Epoch 470/2003 completed. Loss: 0.0968
+Epoch 471/2003 completed. Loss: 0.0984
+Epoch 472/2003 completed. Loss: 0.1004
+Epoch 473/2003 completed. Loss: 0.0971
+Epoch 474/2003 completed. Loss: 0.0907
+Epoch 475/2003 completed. Loss: 0.0918
+Epoch 476/2003 completed. Loss: 0.0943
+Epoch 477/2003 completed. Loss: 0.0965
+Epoch 478/2003 completed. Loss: 0.0926
+Epoch 479/2003 completed. Loss: 0.0919
+Epoch 480/2003 completed. Loss: 0.0893
+Epoch 481/2003 completed. Loss: 0.0963
+Epoch 482/2003 completed. Loss: 0.0942
+Epoch 483/2003 completed. Loss: 0.0863
+Epoch 484/2003 completed. Loss: 0.0969
+Epoch 485/2003 completed. Loss: 0.0950
+Epoch 486/2003 completed. Loss: 0.0924
+Epoch 487/2003 completed. Loss: 0.0914
+Epoch 488/2003 completed. Loss: 0.0900
+Epoch 489/2003 completed. Loss: 0.0941
+Epoch 490/2003 completed. Loss: 0.0899
+Epoch 491/2003 completed. Loss: 0.0895
+Epoch 492/2003 completed. Loss: 0.0965
+Epoch 493/2003 completed. Loss: 0.0893
+Epoch 494/2003 completed. Loss: 0.0908
+Epoch 495/2003 completed. Loss: 0.0972
+Epoch 496/2003 completed. Loss: 0.0888
+Epoch 497/2003 completed. Loss: 0.0919
+Epoch 498/2003 completed. Loss: 0.0841
+Epoch 499/2003 completed. Loss: 0.0874
+Epoch 500/2003 completed. Loss: 0.0853
+Epoch 501/2003 completed. Loss: 0.0889
+Epoch 502/2003 completed. Loss: 0.0858
+Epoch 503/2003 completed. Loss: 0.0960
+Epoch 504/2003 completed. Loss: 0.0936
+Epoch 505/2003 completed. Loss: 0.0927
+Epoch 506/2003 completed. Loss: 0.0949
+Epoch 507/2003 completed. Loss: 0.0929
+Epoch 508/2003 completed. Loss: 0.0939
+Epoch 509/2003 completed. Loss: 0.0963
+Epoch 510/2003 completed. Loss: 0.0941
+Epoch 511/2003 completed. Loss: 0.0921
+Epoch 512/2003 completed. Loss: 0.0893
+Epoch 513/2003 completed. Loss: 0.0865
+Epoch 514/2003 completed. Loss: 0.0850
+Epoch 515/2003 completed. Loss: 0.0893
+Epoch 516/2003 completed. Loss: 0.0884
+Epoch 517/2003 completed. Loss: 0.0926
+Epoch 518/2003 completed. Loss: 0.0886
+Epoch 519/2003 completed. Loss: 0.0897
+Epoch 520/2003 completed. Loss: 0.0937
+Epoch 521/2003 completed. Loss: 0.0860
+Epoch 522/2003 completed. Loss: 0.0876
+Epoch 523/2003 completed. Loss: 0.0888
+Epoch 524/2003 completed. Loss: 0.0851
+Epoch 525/2003 completed. Loss: 0.0854
+Epoch 526/2003 completed. Loss: 0.0878
+Epoch 527/2003 completed. Loss: 0.0917
+Epoch 528/2003 completed. Loss: 0.0901
+Epoch 529/2003 completed. Loss: 0.0872
+Epoch 530/2003 completed. Loss: 0.0851
+Epoch 531/2003 completed. Loss: 0.0849
+Epoch 532/2003 completed. Loss: 0.0884
+Epoch 533/2003 completed. Loss: 0.0882
+Epoch 534/2003 completed. Loss: 0.0896
+Epoch 535/2003 completed. Loss: 0.0859
+Epoch 536/2003 completed. Loss: 0.0907
+Epoch 537/2003 completed. Loss: 0.0814
+Epoch 538/2003 completed. Loss: 0.0842
+Epoch 539/2003 completed. Loss: 0.0909
+Epoch 540/2003 completed. Loss: 0.0892
+Epoch 541/2003 completed. Loss: 0.0841
+Epoch 542/2003 completed. Loss: 0.0906
+Epoch 543/2003 completed. Loss: 0.0905
+Epoch 544/2003 completed. Loss: 0.0862
+Epoch 545/2003 completed. Loss: 0.0806
+Epoch 546/2003 completed. Loss: 0.0858
+Epoch 547/2003 completed. Loss: 0.0835
+Epoch 548/2003 completed. Loss: 0.0889
+Epoch 549/2003 completed. Loss: 0.0885
+Epoch 550/2003 completed. Loss: 0.0840
+Epoch 551/2003 completed. Loss: 0.0837
+Epoch 552/2003 completed. Loss: 0.0841
+Epoch 553/2003 completed. Loss: 0.0823
+Epoch 554/2003 completed. Loss: 0.0852
+Epoch 555/2003 completed. Loss: 0.0824
+Epoch 556/2003 completed. Loss: 0.0860
+Epoch 557/2003 completed. Loss: 0.0835
+Epoch 558/2003 completed. Loss: 0.0861
+Epoch 559/2003 completed. Loss: 0.0846
+Epoch 560/2003 completed. Loss: 0.0843
+Epoch 561/2003 completed. Loss: 0.0792
+Epoch 562/2003 completed. Loss: 0.0819
+Epoch 563/2003 completed. Loss: 0.0826
+Epoch 564/2003 completed. Loss: 0.0844
+Epoch 565/2003 completed. Loss: 0.0848
+Epoch 566/2003 completed. Loss: 0.0847
+Epoch 567/2003 completed. Loss: 0.0872
+Epoch 568/2003 completed. Loss: 0.0810
+Epoch 569/2003 completed. Loss: 0.0868
+Epoch 570/2003 completed. Loss: 0.0786
+Epoch 571/2003 completed. Loss: 0.0875
+Epoch 572/2003 completed. Loss: 0.0814
+Epoch 573/2003 completed. Loss: 0.0824
+Epoch 574/2003 completed. Loss: 0.0838
+Epoch 575/2003 completed. Loss: 0.0808
+Epoch 576/2003 completed. Loss: 0.0842
+Epoch 577/2003 completed. Loss: 0.0834
+Epoch 578/2003 completed. Loss: 0.0833
+Epoch 579/2003 completed. Loss: 0.0832
+Epoch 580/2003 completed. Loss: 0.0848
+Epoch 581/2003 completed. Loss: 0.0863
+Epoch 582/2003 completed. Loss: 0.0868
+Epoch 583/2003 completed. Loss: 0.0837
+Epoch 584/2003 completed. Loss: 0.0815
+Epoch 585/2003 completed. Loss: 0.0872
+Epoch 586/2003 completed. Loss: 0.0814
+Epoch 587/2003 completed. Loss: 0.0830
+Epoch 588/2003 completed. Loss: 0.0822
+Epoch 589/2003 completed. Loss: 0.0858
+Epoch 590/2003 completed. Loss: 0.0811
+Epoch 591/2003 completed. Loss: 0.0831
+Epoch 592/2003 completed. Loss: 0.0864
+Epoch 593/2003 completed. Loss: 0.0860
+Epoch 594/2003 completed. Loss: 0.0726
+Epoch 595/2003 completed. Loss: 0.0778
+Epoch 596/2003 completed. Loss: 0.0822
+Epoch 597/2003 completed. Loss: 0.0789
+Epoch 598/2003 completed. Loss: 0.0812
+Epoch 599/2003 completed. Loss: 0.0806
+Epoch 600/2003 completed. Loss: 0.0815
+Epoch 601/2003 completed. Loss: 0.0794
+Epoch 602/2003 completed. Loss: 0.0802
+Epoch 603/2003 completed. Loss: 0.0816
+Epoch 604/2003 completed. Loss: 0.0789
+Epoch 605/2003 completed. Loss: 0.0835
+Epoch 606/2003 completed. Loss: 0.0801
+Epoch 607/2003 completed. Loss: 0.0717
+Epoch 608/2003 completed. Loss: 0.0794
+Epoch 609/2003 completed. Loss: 0.0817
+Epoch 610/2003 completed. Loss: 0.0803
+Epoch 611/2003 completed. Loss: 0.0800
+Epoch 612/2003 completed. Loss: 0.0792
+Epoch 613/2003 completed. Loss: 0.0813
+Epoch 614/2003 completed. Loss: 0.0783
+Epoch 615/2003 completed. Loss: 0.0748
+Epoch 616/2003 completed. Loss: 0.0837
+Epoch 617/2003 completed. Loss: 0.0795
+Epoch 618/2003 completed. Loss: 0.0793
+Epoch 619/2003 completed. Loss: 0.0776
+Epoch 620/2003 completed. Loss: 0.0833
+Epoch 621/2003 completed. Loss: 0.0771
+Epoch 622/2003 completed. Loss: 0.0774
+Epoch 623/2003 completed. Loss: 0.0722
+Epoch 624/2003 completed. Loss: 0.0770
+Epoch 625/2003 completed. Loss: 0.0805
+Epoch 626/2003 completed. Loss: 0.0759
+Epoch 627/2003 completed. Loss: 0.0833
+Epoch 628/2003 completed. Loss: 0.0757
+Epoch 629/2003 completed. Loss: 0.0835
+Epoch 630/2003 completed. Loss: 0.0787
+Epoch 631/2003 completed. Loss: 0.0803
+Epoch 632/2003 completed. Loss: 0.0759
+Epoch 633/2003 completed. Loss: 0.0824
+Epoch 634/2003 completed. Loss: 0.0776
+Epoch 635/2003 completed. Loss: 0.0810
+Epoch 636/2003 completed. Loss: 0.0763
+Epoch 637/2003 completed. Loss: 0.0796
+Epoch 638/2003 completed. Loss: 0.0774
+Epoch 639/2003 completed. Loss: 0.0810
+Epoch 640/2003 completed. Loss: 0.0787
+Epoch 641/2003 completed. Loss: 0.0774
+Epoch 642/2003 completed. Loss: 0.0804
+Epoch 643/2003 completed. Loss: 0.0821
+Epoch 644/2003 completed. Loss: 0.0815
+Epoch 645/2003 completed. Loss: 0.0825
+Epoch 646/2003 completed. Loss: 0.0772
+Epoch 647/2003 completed. Loss: 0.0777
+Epoch 648/2003 completed. Loss: 0.0766
+Epoch 649/2003 completed. Loss: 0.0780
+Epoch 650/2003 completed. Loss: 0.0808
+Epoch 651/2003 completed. Loss: 0.0805
+Epoch 652/2003 completed. Loss: 0.0754
+Epoch 653/2003 completed. Loss: 0.0791
+Epoch 654/2003 completed. Loss: 0.0756
+Epoch 655/2003 completed. Loss: 0.0851
+Epoch 656/2003 completed. Loss: 0.0758
+Epoch 657/2003 completed. Loss: 0.0712
+Epoch 658/2003 completed. Loss: 0.0761
+Epoch 659/2003 completed. Loss: 0.0768
+Epoch 660/2003 completed. Loss: 0.0769
+Epoch 661/2003 completed. Loss: 0.0790
+Epoch 662/2003 completed. Loss: 0.0749
+Epoch 663/2003 completed. Loss: 0.0748
+Epoch 664/2003 completed. Loss: 0.0765
+Epoch 665/2003 completed. Loss: 0.0794
+Epoch 666/2003 completed. Loss: 0.0767
+Epoch 667/2003 completed. Loss: 0.0752
+Epoch 668/2003 completed. Loss: 0.0754
+Epoch 669/2003 completed. Loss: 0.0756
+Epoch 670/2003 completed. Loss: 0.0826
+Epoch 671/2003 completed. Loss: 0.0811
+Epoch 672/2003 completed. Loss: 0.0743
+Epoch 673/2003 completed. Loss: 0.0766
+Epoch 674/2003 completed. Loss: 0.0749
+Epoch 675/2003 completed. Loss: 0.0786
+Epoch 676/2003 completed. Loss: 0.0745
+Epoch 677/2003 completed. Loss: 0.0771
+Epoch 678/2003 completed. Loss: 0.0711
+Epoch 679/2003 completed. Loss: 0.0791
+Epoch 680/2003 completed. Loss: 0.0815
+Epoch 681/2003 completed. Loss: 0.0768
+Epoch 682/2003 completed. Loss: 0.0727
+Epoch 683/2003 completed. Loss: 0.0805
+Epoch 684/2003 completed. Loss: 0.0704
+Epoch 685/2003 completed. Loss: 0.0796
+Epoch 686/2003 completed. Loss: 0.0769
+Epoch 687/2003 completed. Loss: 0.0770
+Epoch 688/2003 completed. Loss: 0.0779
+Epoch 689/2003 completed. Loss: 0.0798
+Epoch 690/2003 completed. Loss: 0.0791
+Epoch 691/2003 completed. Loss: 0.0735
+Epoch 692/2003 completed. Loss: 0.0796
+Epoch 693/2003 completed. Loss: 0.0704
+Epoch 694/2003 completed. Loss: 0.0725
+Epoch 695/2003 completed. Loss: 0.0772
+Epoch 696/2003 completed. Loss: 0.0719
+Epoch 697/2003 completed. Loss: 0.0730
+Epoch 698/2003 completed. Loss: 0.0779
+Epoch 699/2003 completed. Loss: 0.0750
+Epoch 700/2003 completed. Loss: 0.0738
+Epoch 701/2003 completed. Loss: 0.0740
+Epoch 702/2003 completed. Loss: 0.0794
+Epoch 703/2003 completed. Loss: 0.0704
+Epoch 704/2003 completed. Loss: 0.0712
+Epoch 705/2003 completed. Loss: 0.0730
+Epoch 706/2003 completed. Loss: 0.0755
+Epoch 707/2003 completed. Loss: 0.0749
+Epoch 708/2003 completed. Loss: 0.0743
+Epoch 709/2003 completed. Loss: 0.0754
+Epoch 710/2003 completed. Loss: 0.0765
+Epoch 711/2003 completed. Loss: 0.0727
+Epoch 712/2003 completed. Loss: 0.0715
+Epoch 713/2003 completed. Loss: 0.0724
+Epoch 714/2003 completed. Loss: 0.0694
+Epoch 715/2003 completed. Loss: 0.0701
+Epoch 716/2003 completed. Loss: 0.0781
+Epoch 717/2003 completed. Loss: 0.0775
+Epoch 718/2003 completed. Loss: 0.0699
+Epoch 719/2003 completed. Loss: 0.0744
+Epoch 720/2003 completed. Loss: 0.0711
+Epoch 721/2003 completed. Loss: 0.0769
+Epoch 722/2003 completed. Loss: 0.0762
+Epoch 723/2003 completed. Loss: 0.0739
+Epoch 724/2003 completed. Loss: 0.0721
+Epoch 725/2003 completed. Loss: 0.0700
+Epoch 726/2003 completed. Loss: 0.0726
+Epoch 727/2003 completed. Loss: 0.0752
+Epoch 728/2003 completed. Loss: 0.0762
+Epoch 729/2003 completed. Loss: 0.0710
+Epoch 730/2003 completed. Loss: 0.0746
+Epoch 731/2003 completed. Loss: 0.0666
+Epoch 732/2003 completed. Loss: 0.0711
+Epoch 733/2003 completed. Loss: 0.0742
+Epoch 734/2003 completed. Loss: 0.0706
+Epoch 735/2003 completed. Loss: 0.0775
+Epoch 736/2003 completed. Loss: 0.0701
+Epoch 737/2003 completed. Loss: 0.0713
+Epoch 738/2003 completed. Loss: 0.0719
+Epoch 739/2003 completed. Loss: 0.0733
+Epoch 740/2003 completed. Loss: 0.0743
+Epoch 741/2003 completed. Loss: 0.0673
+Epoch 742/2003 completed. Loss: 0.0708
+Epoch 743/2003 completed. Loss: 0.0704
+Epoch 744/2003 completed. Loss: 0.0707
+Epoch 745/2003 completed. Loss: 0.0737
+Epoch 746/2003 completed. Loss: 0.0640
+Epoch 747/2003 completed. Loss: 0.0724
+Epoch 748/2003 completed. Loss: 0.0718
+Epoch 749/2003 completed. Loss: 0.0714
+Epoch 750/2003 completed. Loss: 0.0716
+Epoch 751/2003 completed. Loss: 0.0703
+Epoch 752/2003 completed. Loss: 0.0751
+Epoch 753/2003 completed. Loss: 0.0718
+Epoch 754/2003 completed. Loss: 0.0706
+Epoch 755/2003 completed. Loss: 0.0739
+Epoch 756/2003 completed. Loss: 0.0663
+Epoch 757/2003 completed. Loss: 0.0723
+Epoch 758/2003 completed. Loss: 0.0642
+Epoch 759/2003 completed. Loss: 0.0741
+Epoch 760/2003 completed. Loss: 0.0708
+Epoch 761/2003 completed. Loss: 0.0707
+Epoch 762/2003 completed. Loss: 0.0699
+Epoch 763/2003 completed. Loss: 0.0732
+Epoch 764/2003 completed. Loss: 0.0664
+Epoch 765/2003 completed. Loss: 0.0729
+Epoch 766/2003 completed. Loss: 0.0775
+Epoch 767/2003 completed. Loss: 0.0696
+Epoch 768/2003 completed. Loss: 0.0669
+Epoch 769/2003 completed. Loss: 0.0693
+Epoch 770/2003 completed. Loss: 0.0687
+Epoch 771/2003 completed. Loss: 0.0709
+Epoch 772/2003 completed. Loss: 0.0682
+Epoch 773/2003 completed. Loss: 0.0687
+Epoch 774/2003 completed. Loss: 0.0711
+Epoch 775/2003 completed. Loss: 0.0683
+Epoch 776/2003 completed. Loss: 0.0707
+Epoch 777/2003 completed. Loss: 0.0688
+Epoch 778/2003 completed. Loss: 0.0714
+Epoch 779/2003 completed. Loss: 0.0716
+Epoch 780/2003 completed. Loss: 0.0690
+Epoch 781/2003 completed. Loss: 0.0695
+Epoch 782/2003 completed. Loss: 0.0745
+Epoch 783/2003 completed. Loss: 0.0698
+Epoch 784/2003 completed. Loss: 0.0703
+Epoch 785/2003 completed. Loss: 0.0731
+Epoch 786/2003 completed. Loss: 0.0705
+Epoch 787/2003 completed. Loss: 0.0685
+Epoch 788/2003 completed. Loss: 0.0643
+Epoch 789/2003 completed. Loss: 0.0680
+Epoch 790/2003 completed. Loss: 0.0656
+Epoch 791/2003 completed. Loss: 0.0661
+Epoch 792/2003 completed. Loss: 0.0709
+Epoch 793/2003 completed. Loss: 0.0722
+Epoch 794/2003 completed. Loss: 0.0715
+Epoch 795/2003 completed. Loss: 0.0683
+Epoch 796/2003 completed. Loss: 0.0691
+Epoch 797/2003 completed. Loss: 0.0695
+Epoch 798/2003 completed. Loss: 0.0630
+Epoch 799/2003 completed. Loss: 0.0712
+Epoch 800/2003 completed. Loss: 0.0683
+Epoch 801/2003 completed. Loss: 0.0690
+Epoch 802/2003 completed. Loss: 0.0658
+Epoch 803/2003 completed. Loss: 0.0745
+Epoch 804/2003 completed. Loss: 0.0680
+Epoch 805/2003 completed. Loss: 0.0663
+Epoch 806/2003 completed. Loss: 0.0730
+Epoch 807/2003 completed. Loss: 0.0648
+Epoch 808/2003 completed. Loss: 0.0690
+Epoch 809/2003 completed. Loss: 0.0695
+Epoch 810/2003 completed. Loss: 0.0703
+Epoch 811/2003 completed. Loss: 0.0739
+Epoch 812/2003 completed. Loss: 0.0623
+Epoch 813/2003 completed. Loss: 0.0642
+Epoch 814/2003 completed. Loss: 0.0725
+Epoch 815/2003 completed. Loss: 0.0656
+Epoch 816/2003 completed. Loss: 0.0597
+Epoch 817/2003 completed. Loss: 0.0664
+Epoch 818/2003 completed. Loss: 0.0703
+Epoch 819/2003 completed. Loss: 0.0699
+Epoch 820/2003 completed. Loss: 0.0755
+Epoch 821/2003 completed. Loss: 0.0665
+Epoch 822/2003 completed. Loss: 0.0626
+Epoch 823/2003 completed. Loss: 0.0717
+Epoch 824/2003 completed. Loss: 0.0691
+Epoch 825/2003 completed. Loss: 0.0661
+Epoch 826/2003 completed. Loss: 0.0686
+Epoch 827/2003 completed. Loss: 0.0658
+Epoch 828/2003 completed. Loss: 0.0668
+Epoch 829/2003 completed. Loss: 0.0653
+Epoch 830/2003 completed. Loss: 0.0672
+Epoch 831/2003 completed. Loss: 0.0666
+Epoch 832/2003 completed. Loss: 0.0682
+Epoch 833/2003 completed. Loss: 0.0646
+Epoch 834/2003 completed. Loss: 0.0717
+Epoch 835/2003 completed. Loss: 0.0661
+Epoch 836/2003 completed. Loss: 0.0667
+Epoch 837/2003 completed. Loss: 0.0702
+Epoch 838/2003 completed. Loss: 0.0657
+Epoch 839/2003 completed. Loss: 0.0737
+Epoch 840/2003 completed. Loss: 0.0671
+Epoch 841/2003 completed. Loss: 0.0639
+Epoch 842/2003 completed. Loss: 0.0611
+Epoch 843/2003 completed. Loss: 0.0668
+Epoch 844/2003 completed. Loss: 0.0689
+Epoch 845/2003 completed. Loss: 0.0700
+Epoch 846/2003 completed. Loss: 0.0625
+Epoch 847/2003 completed. Loss: 0.0658
+Epoch 848/2003 completed. Loss: 0.0687
+Epoch 849/2003 completed. Loss: 0.0670
+Epoch 850/2003 completed. Loss: 0.0694
+Epoch 851/2003 completed. Loss: 0.0673
+Epoch 852/2003 completed. Loss: 0.0622
+Epoch 853/2003 completed. Loss: 0.0647
+Epoch 854/2003 completed. Loss: 0.0650
+Epoch 855/2003 completed. Loss: 0.0724
+Epoch 856/2003 completed. Loss: 0.0664
+Epoch 857/2003 completed. Loss: 0.0660
+Epoch 858/2003 completed. Loss: 0.0700
+Epoch 859/2003 completed. Loss: 0.0746
+Epoch 860/2003 completed. Loss: 0.0694
+Epoch 861/2003 completed. Loss: 0.0704
+Epoch 862/2003 completed. Loss: 0.0686
+Epoch 863/2003 completed. Loss: 0.0636
+Epoch 864/2003 completed. Loss: 0.0695
+Epoch 865/2003 completed. Loss: 0.0640
+Epoch 866/2003 completed. Loss: 0.0659
+Epoch 867/2003 completed. Loss: 0.0686
+Epoch 868/2003 completed. Loss: 0.0649
+Epoch 869/2003 completed. Loss: 0.0661
+Epoch 870/2003 completed. Loss: 0.0646
+Epoch 871/2003 completed. Loss: 0.0702
+Epoch 872/2003 completed. Loss: 0.0667
+Epoch 873/2003 completed. Loss: 0.0637
+Epoch 874/2003 completed. Loss: 0.0632
+Epoch 875/2003 completed. Loss: 0.0670
+Epoch 876/2003 completed. Loss: 0.0660
+Epoch 877/2003 completed. Loss: 0.0636
+Epoch 878/2003 completed. Loss: 0.0693
+Epoch 879/2003 completed. Loss: 0.0620
+Epoch 880/2003 completed. Loss: 0.0636
+Epoch 881/2003 completed. Loss: 0.0684
+Epoch 882/2003 completed. Loss: 0.0657
+Epoch 883/2003 completed. Loss: 0.0680
+Epoch 884/2003 completed. Loss: 0.0668
+Epoch 885/2003 completed. Loss: 0.0609
+Epoch 886/2003 completed. Loss: 0.0647
+Epoch 887/2003 completed. Loss: 0.0635
+Epoch 888/2003 completed. Loss: 0.0648
+Epoch 889/2003 completed. Loss: 0.0682
+Epoch 890/2003 completed. Loss: 0.0653
+Epoch 891/2003 completed. Loss: 0.0647
+Epoch 892/2003 completed. Loss: 0.0675
+Epoch 893/2003 completed. Loss: 0.0666
+Epoch 894/2003 completed. Loss: 0.0654
+Epoch 895/2003 completed. Loss: 0.0617
+Epoch 896/2003 completed. Loss: 0.0641
+Epoch 897/2003 completed. Loss: 0.0619
+Epoch 898/2003 completed. Loss: 0.0635
+Epoch 899/2003 completed. Loss: 0.0623
+Epoch 900/2003 completed. Loss: 0.0686
+Epoch 901/2003 completed. Loss: 0.0634
+Epoch 902/2003 completed. Loss: 0.0641
+Epoch 903/2003 completed. Loss: 0.0646
+Epoch 904/2003 completed. Loss: 0.0621
+Epoch 905/2003 completed. Loss: 0.0611
+Epoch 906/2003 completed. Loss: 0.0671
+Epoch 907/2003 completed. Loss: 0.0674
+Epoch 908/2003 completed. Loss: 0.0691
+Epoch 909/2003 completed. Loss: 0.0653
+Epoch 910/2003 completed. Loss: 0.0624
+Epoch 911/2003 completed. Loss: 0.0624
+Epoch 912/2003 completed. Loss: 0.0603
+Epoch 913/2003 completed. Loss: 0.0668
+Epoch 914/2003 completed. Loss: 0.0637
+Epoch 915/2003 completed. Loss: 0.0681
+Epoch 916/2003 completed. Loss: 0.0637
+Epoch 917/2003 completed. Loss: 0.0683
+Epoch 918/2003 completed. Loss: 0.0621
+Epoch 919/2003 completed. Loss: 0.0601
+Epoch 920/2003 completed. Loss: 0.0658
+Epoch 921/2003 completed. Loss: 0.0618
+Epoch 922/2003 completed. Loss: 0.0610
+Epoch 923/2003 completed. Loss: 0.0606
+Epoch 924/2003 completed. Loss: 0.0659
+Epoch 925/2003 completed. Loss: 0.0685
+Epoch 926/2003 completed. Loss: 0.0628
+Epoch 927/2003 completed. Loss: 0.0605
+Epoch 928/2003 completed. Loss: 0.0625
+Epoch 929/2003 completed. Loss: 0.0686
+Epoch 930/2003 completed. Loss: 0.0641
+Epoch 931/2003 completed. Loss: 0.0617
+Epoch 932/2003 completed. Loss: 0.0629
+Epoch 933/2003 completed. Loss: 0.0672
+Epoch 934/2003 completed. Loss: 0.0645
+Epoch 935/2003 completed. Loss: 0.0643
+Epoch 936/2003 completed. Loss: 0.0608
+Epoch 937/2003 completed. Loss: 0.0603
+Epoch 938/2003 completed. Loss: 0.0692
+Epoch 939/2003 completed. Loss: 0.0632
+Epoch 940/2003 completed. Loss: 0.0635
+Epoch 941/2003 completed. Loss: 0.0603
+Epoch 942/2003 completed. Loss: 0.0605
+Epoch 943/2003 completed. Loss: 0.0594
+Epoch 944/2003 completed. Loss: 0.0582
+Epoch 945/2003 completed. Loss: 0.0618
+Epoch 946/2003 completed. Loss: 0.0649
+Epoch 947/2003 completed. Loss: 0.0604
+Epoch 948/2003 completed. Loss: 0.0616
+Epoch 949/2003 completed. Loss: 0.0615
+Epoch 950/2003 completed. Loss: 0.0625
+Epoch 951/2003 completed. Loss: 0.0627
+Epoch 952/2003 completed. Loss: 0.0651
+Epoch 953/2003 completed. Loss: 0.0639
+Epoch 954/2003 completed. Loss: 0.0611
+Epoch 955/2003 completed. Loss: 0.0629
+Epoch 956/2003 completed. Loss: 0.0630
+Epoch 957/2003 completed. Loss: 0.0667
+Epoch 958/2003 completed. Loss: 0.0619
+Epoch 959/2003 completed. Loss: 0.0604
+Epoch 960/2003 completed. Loss: 0.0600
+Epoch 961/2003 completed. Loss: 0.0687
+Epoch 962/2003 completed. Loss: 0.0628
+Epoch 963/2003 completed. Loss: 0.0619
+Epoch 964/2003 completed. Loss: 0.0594
+Epoch 965/2003 completed. Loss: 0.0598
+Epoch 966/2003 completed. Loss: 0.0630
+Epoch 967/2003 completed. Loss: 0.0592
+Epoch 968/2003 completed. Loss: 0.0613
+Epoch 969/2003 completed. Loss: 0.0619
+Epoch 970/2003 completed. Loss: 0.0617
+Epoch 971/2003 completed. Loss: 0.0632
+Epoch 972/2003 completed. Loss: 0.0589
+Epoch 973/2003 completed. Loss: 0.0651
+Epoch 974/2003 completed. Loss: 0.0626
+Epoch 975/2003 completed. Loss: 0.0583
+Epoch 976/2003 completed. Loss: 0.0629
+Epoch 977/2003 completed. Loss: 0.0612
+Epoch 978/2003 completed. Loss: 0.0624
+Epoch 979/2003 completed. Loss: 0.0655
+Epoch 980/2003 completed. Loss: 0.0614
+Epoch 981/2003 completed. Loss: 0.0661
+Epoch 982/2003 completed. Loss: 0.0610
+Epoch 983/2003 completed. Loss: 0.0586
+Epoch 984/2003 completed. Loss: 0.0634
+Epoch 985/2003 completed. Loss: 0.0644
+Epoch 986/2003 completed. Loss: 0.0587
+Epoch 987/2003 completed. Loss: 0.0589
+Epoch 988/2003 completed. Loss: 0.0621
+Epoch 989/2003 completed. Loss: 0.0591
+Epoch 990/2003 completed. Loss: 0.0599
+Epoch 991/2003 completed. Loss: 0.0583
+Epoch 992/2003 completed. Loss: 0.0609
+Epoch 993/2003 completed. Loss: 0.0596
+Epoch 994/2003 completed. Loss: 0.0698
+Epoch 995/2003 completed. Loss: 0.0602
+Epoch 996/2003 completed. Loss: 0.0631
+Epoch 997/2003 completed. Loss: 0.0591
+Epoch 998/2003 completed. Loss: 0.0658
+Epoch 999/2003 completed. Loss: 0.0661
+Epoch 1000/2003 completed. Loss: 0.0612
+Epoch 1001/2003 completed. Loss: 0.0608
+Epoch 1002/2003 completed. Loss: 0.0598
+Epoch 1003/2003 completed. Loss: 0.0564
+Epoch 1004/2003 completed. Loss: 0.0625
+Epoch 1005/2003 completed. Loss: 0.0629
+Epoch 1006/2003 completed. Loss: 0.0628
+Epoch 1007/2003 completed. Loss: 0.0634
+Epoch 1008/2003 completed. Loss: 0.0638
+Epoch 1009/2003 completed. Loss: 0.0571
+Epoch 1010/2003 completed. Loss: 0.0639
+Epoch 1011/2003 completed. Loss: 0.0583
+Epoch 1012/2003 completed. Loss: 0.0656
+Epoch 1013/2003 completed. Loss: 0.0593
+Epoch 1014/2003 completed. Loss: 0.0539
+Epoch 1015/2003 completed. Loss: 0.0598
+Epoch 1016/2003 completed. Loss: 0.0624
+Epoch 1017/2003 completed. Loss: 0.0599
+Epoch 1018/2003 completed. Loss: 0.0580
+Epoch 1019/2003 completed. Loss: 0.0613
+Epoch 1020/2003 completed. Loss: 0.0615
+Epoch 1021/2003 completed. Loss: 0.0627
+Epoch 1022/2003 completed. Loss: 0.0638
+Epoch 1023/2003 completed. Loss: 0.0634
+Epoch 1024/2003 completed. Loss: 0.0583
+Epoch 1025/2003 completed. Loss: 0.0599
+Epoch 1026/2003 completed. Loss: 0.0613
+Epoch 1027/2003 completed. Loss: 0.0577
+Epoch 1028/2003 completed. Loss: 0.0579
+Epoch 1029/2003 completed. Loss: 0.0591
+Epoch 1030/2003 completed. Loss: 0.0618
+Epoch 1031/2003 completed. Loss: 0.0567
+Epoch 1032/2003 completed. Loss: 0.0585
+Epoch 1033/2003 completed. Loss: 0.0657
+Epoch 1034/2003 completed. Loss: 0.0581
+Epoch 1035/2003 completed. Loss: 0.0585
+Epoch 1036/2003 completed. Loss: 0.0606
+Epoch 1037/2003 completed. Loss: 0.0602
+Epoch 1038/2003 completed. Loss: 0.0625
+Epoch 1039/2003 completed. Loss: 0.0568
+Epoch 1040/2003 completed. Loss: 0.0636
+Epoch 1041/2003 completed. Loss: 0.0591
+Epoch 1042/2003 completed. Loss: 0.0608
+Epoch 1043/2003 completed. Loss: 0.0573
+Epoch 1044/2003 completed. Loss: 0.0591
+Epoch 1045/2003 completed. Loss: 0.0574
+Epoch 1046/2003 completed. Loss: 0.0628
+Epoch 1047/2003 completed. Loss: 0.0555
+Epoch 1048/2003 completed. Loss: 0.0640
+Epoch 1049/2003 completed. Loss: 0.0604
+Epoch 1050/2003 completed. Loss: 0.0569
+Epoch 1051/2003 completed. Loss: 0.0602
+Epoch 1052/2003 completed. Loss: 0.0603
+Epoch 1053/2003 completed. Loss: 0.0599
+Epoch 1054/2003 completed. Loss: 0.0545
+Epoch 1055/2003 completed. Loss: 0.0657
+Epoch 1056/2003 completed. Loss: 0.0585
+Epoch 1057/2003 completed. Loss: 0.0579
+Epoch 1058/2003 completed. Loss: 0.0627
+Epoch 1059/2003 completed. Loss: 0.0578
+Epoch 1060/2003 completed. Loss: 0.0582
+Epoch 1061/2003 completed. Loss: 0.0559
+Epoch 1062/2003 completed. Loss: 0.0634
+Epoch 1063/2003 completed. Loss: 0.0608
+Epoch 1064/2003 completed. Loss: 0.0569
+Epoch 1065/2003 completed. Loss: 0.0570
+Epoch 1066/2003 completed. Loss: 0.0601
+Epoch 1067/2003 completed. Loss: 0.0581
+Epoch 1068/2003 completed. Loss: 0.0626
+Epoch 1069/2003 completed. Loss: 0.0559
+Epoch 1070/2003 completed. Loss: 0.0611
+Epoch 1071/2003 completed. Loss: 0.0547
+Epoch 1072/2003 completed. Loss: 0.0626
+Epoch 1073/2003 completed. Loss: 0.0599
+Epoch 1074/2003 completed. Loss: 0.0633
+Epoch 1075/2003 completed. Loss: 0.0549
+Epoch 1076/2003 completed. Loss: 0.0584
+Epoch 1077/2003 completed. Loss: 0.0587
+Epoch 1078/2003 completed. Loss: 0.0615
+Epoch 1079/2003 completed. Loss: 0.0567
+Epoch 1080/2003 completed. Loss: 0.0596
+Epoch 1081/2003 completed. Loss: 0.0559
+Epoch 1082/2003 completed. Loss: 0.0604
+Epoch 1083/2003 completed. Loss: 0.0599
+Epoch 1084/2003 completed. Loss: 0.0547
+Epoch 1085/2003 completed. Loss: 0.0571
+Epoch 1086/2003 completed. Loss: 0.0591
+Epoch 1087/2003 completed. Loss: 0.0585
+Epoch 1088/2003 completed. Loss: 0.0646
+Epoch 1089/2003 completed. Loss: 0.0586
+Epoch 1090/2003 completed. Loss: 0.0568
+Epoch 1091/2003 completed. Loss: 0.0538
+Epoch 1092/2003 completed. Loss: 0.0570
+Epoch 1093/2003 completed. Loss: 0.0548
+Epoch 1094/2003 completed. Loss: 0.0598
+Epoch 1095/2003 completed. Loss: 0.0550
+Epoch 1096/2003 completed. Loss: 0.0573
+Epoch 1097/2003 completed. Loss: 0.0578
+Epoch 1098/2003 completed. Loss: 0.0644
+Epoch 1099/2003 completed. Loss: 0.0640
+Epoch 1100/2003 completed. Loss: 0.0617
+Epoch 1101/2003 completed. Loss: 0.0576
+Epoch 1102/2003 completed. Loss: 0.0584
+Epoch 1103/2003 completed. Loss: 0.0560
+Epoch 1104/2003 completed. Loss: 0.0629
+Epoch 1105/2003 completed. Loss: 0.0556
+Epoch 1106/2003 completed. Loss: 0.0559
+Epoch 1107/2003 completed. Loss: 0.0579
+Epoch 1108/2003 completed. Loss: 0.0624
+Epoch 1109/2003 completed. Loss: 0.0558
+Epoch 1110/2003 completed. Loss: 0.0564
+Epoch 1111/2003 completed. Loss: 0.0627
+Epoch 1112/2003 completed. Loss: 0.0568
+Epoch 1113/2003 completed. Loss: 0.0520
+Epoch 1114/2003 completed. Loss: 0.0579
+Epoch 1115/2003 completed. Loss: 0.0600
+Epoch 1116/2003 completed. Loss: 0.0542
+Epoch 1117/2003 completed. Loss: 0.0537
+Epoch 1118/2003 completed. Loss: 0.0559
+Epoch 1119/2003 completed. Loss: 0.0657
+Epoch 1120/2003 completed. Loss: 0.0556
+Epoch 1121/2003 completed. Loss: 0.0613
+Epoch 1122/2003 completed. Loss: 0.0556
+Epoch 1123/2003 completed. Loss: 0.0574
+Epoch 1124/2003 completed. Loss: 0.0575
+Epoch 1125/2003 completed. Loss: 0.0587
+Epoch 1126/2003 completed. Loss: 0.0666
+Epoch 1127/2003 completed. Loss: 0.0602
+Epoch 1128/2003 completed. Loss: 0.0581
+Epoch 1129/2003 completed. Loss: 0.0582
+Epoch 1130/2003 completed. Loss: 0.0549
+Epoch 1131/2003 completed. Loss: 0.0585
+Epoch 1132/2003 completed. Loss: 0.0591
+Epoch 1133/2003 completed. Loss: 0.0574
+Epoch 1134/2003 completed. Loss: 0.0583
+Epoch 1135/2003 completed. Loss: 0.0547
+Epoch 1136/2003 completed. Loss: 0.0533
+Epoch 1137/2003 completed. Loss: 0.0545
+Epoch 1138/2003 completed. Loss: 0.0594
+Epoch 1139/2003 completed. Loss: 0.0562
+Epoch 1140/2003 completed. Loss: 0.0595
+Epoch 1141/2003 completed. Loss: 0.0599
+Epoch 1142/2003 completed. Loss: 0.0553
+Epoch 1143/2003 completed. Loss: 0.0570
+Epoch 1144/2003 completed. Loss: 0.0600
+Epoch 1145/2003 completed. Loss: 0.0540
+Epoch 1146/2003 completed. Loss: 0.0574
+Epoch 1147/2003 completed. Loss: 0.0582
+Epoch 1148/2003 completed. Loss: 0.0579
+Epoch 1149/2003 completed. Loss: 0.0581
+Epoch 1150/2003 completed. Loss: 0.0577
+Epoch 1151/2003 completed. Loss: 0.0549
+Epoch 1152/2003 completed. Loss: 0.0541
+Epoch 1153/2003 completed. Loss: 0.0542
+Epoch 1154/2003 completed. Loss: 0.0571
+Epoch 1155/2003 completed. Loss: 0.0567
+Epoch 1156/2003 completed. Loss: 0.0540
+Epoch 1157/2003 completed. Loss: 0.0541
+Epoch 1158/2003 completed. Loss: 0.0555
+Epoch 1159/2003 completed. Loss: 0.0591
+Epoch 1160/2003 completed. Loss: 0.0540
+Epoch 1161/2003 completed. Loss: 0.0568
+Epoch 1162/2003 completed. Loss: 0.0543
+Epoch 1163/2003 completed. Loss: 0.0561
+Epoch 1164/2003 completed. Loss: 0.0526
+Epoch 1165/2003 completed. Loss: 0.0572
+Epoch 1166/2003 completed. Loss: 0.0568
+Epoch 1167/2003 completed. Loss: 0.0594
+Epoch 1168/2003 completed. Loss: 0.0525
+Epoch 1169/2003 completed. Loss: 0.0586
+Epoch 1170/2003 completed. Loss: 0.0558
+Epoch 1171/2003 completed. Loss: 0.0553
+Epoch 1172/2003 completed. Loss: 0.0587
+Epoch 1173/2003 completed. Loss: 0.0538
+Epoch 1174/2003 completed. Loss: 0.0543
+Epoch 1175/2003 completed. Loss: 0.0514
+Epoch 1176/2003 completed. Loss: 0.0548
+Epoch 1177/2003 completed. Loss: 0.0550
+Epoch 1178/2003 completed. Loss: 0.0576
+Epoch 1179/2003 completed. Loss: 0.0542
+Epoch 1180/2003 completed. Loss: 0.0512
+Epoch 1181/2003 completed. Loss: 0.0540
+Epoch 1182/2003 completed. Loss: 0.0538
+Epoch 1183/2003 completed. Loss: 0.0499
+Epoch 1184/2003 completed. Loss: 0.0593
+Epoch 1185/2003 completed. Loss: 0.0493
+Epoch 1186/2003 completed. Loss: 0.0628
+Epoch 1187/2003 completed. Loss: 0.0555
+Epoch 1188/2003 completed. Loss: 0.0594
+Epoch 1189/2003 completed. Loss: 0.0579
+Epoch 1190/2003 completed. Loss: 0.0575
+Epoch 1191/2003 completed. Loss: 0.0551
+Epoch 1192/2003 completed. Loss: 0.0573
+Epoch 1193/2003 completed. Loss: 0.0563
+Epoch 1194/2003 completed. Loss: 0.0543
+Epoch 1195/2003 completed. Loss: 0.0557
+Epoch 1196/2003 completed. Loss: 0.0574
+Epoch 1197/2003 completed. Loss: 0.0539
+Epoch 1198/2003 completed. Loss: 0.0539
+Epoch 1199/2003 completed. Loss: 0.0548
+Epoch 1200/2003 completed. Loss: 0.0545
+Epoch 1201/2003 completed. Loss: 0.0589
+Epoch 1202/2003 completed. Loss: 0.0564
+Epoch 1203/2003 completed. Loss: 0.0540
+Epoch 1204/2003 completed. Loss: 0.0563
+Epoch 1205/2003 completed. Loss: 0.0545
+Epoch 1206/2003 completed. Loss: 0.0585
+Epoch 1207/2003 completed. Loss: 0.0575
+Epoch 1208/2003 completed. Loss: 0.0529
+Epoch 1209/2003 completed. Loss: 0.0516
+Epoch 1210/2003 completed. Loss: 0.0533
+Epoch 1211/2003 completed. Loss: 0.0588
+Epoch 1212/2003 completed. Loss: 0.0522
+Epoch 1213/2003 completed. Loss: 0.0591
+Epoch 1214/2003 completed. Loss: 0.0541
+Epoch 1215/2003 completed. Loss: 0.0525
+Epoch 1216/2003 completed. Loss: 0.0598
+Epoch 1217/2003 completed. Loss: 0.0567
+Epoch 1218/2003 completed. Loss: 0.0508
+Epoch 1219/2003 completed. Loss: 0.0575
+Epoch 1220/2003 completed. Loss: 0.0588
+Epoch 1221/2003 completed. Loss: 0.0517
+Epoch 1222/2003 completed. Loss: 0.0524
+Epoch 1223/2003 completed. Loss: 0.0554
+Epoch 1224/2003 completed. Loss: 0.0607
+Epoch 1225/2003 completed. Loss: 0.0569
+Epoch 1226/2003 completed. Loss: 0.0561
+Epoch 1227/2003 completed. Loss: 0.0567
+Epoch 1228/2003 completed. Loss: 0.0545
+Epoch 1229/2003 completed. Loss: 0.0517
+Epoch 1230/2003 completed. Loss: 0.0507
+Epoch 1231/2003 completed. Loss: 0.0532
+Epoch 1232/2003 completed. Loss: 0.0562
+Epoch 1233/2003 completed. Loss: 0.0557
+Epoch 1234/2003 completed. Loss: 0.0549
+Epoch 1235/2003 completed. Loss: 0.0518
+Epoch 1236/2003 completed. Loss: 0.0518
+Epoch 1237/2003 completed. Loss: 0.0557
+Epoch 1238/2003 completed. Loss: 0.0516
+Epoch 1239/2003 completed. Loss: 0.0520
+Epoch 1240/2003 completed. Loss: 0.0532
+Epoch 1241/2003 completed. Loss: 0.0530
+Epoch 1242/2003 completed. Loss: 0.0595
+Epoch 1243/2003 completed. Loss: 0.0554
+Epoch 1244/2003 completed. Loss: 0.0540
+Epoch 1245/2003 completed. Loss: 0.0592
+Epoch 1246/2003 completed. Loss: 0.0567
+Epoch 1247/2003 completed. Loss: 0.0474
+Epoch 1248/2003 completed. Loss: 0.0563
+Epoch 1249/2003 completed. Loss: 0.0524
+Epoch 1250/2003 completed. Loss: 0.0497
+Epoch 1251/2003 completed. Loss: 0.0544
+Epoch 1252/2003 completed. Loss: 0.0532
+Epoch 1253/2003 completed. Loss: 0.0549
+Epoch 1254/2003 completed. Loss: 0.0547
+Epoch 1255/2003 completed. Loss: 0.0492
+Epoch 1256/2003 completed. Loss: 0.0518
+Epoch 1257/2003 completed. Loss: 0.0556
+Epoch 1258/2003 completed. Loss: 0.0511
+Epoch 1259/2003 completed. Loss: 0.0561
+Epoch 1260/2003 completed. Loss: 0.0535
+Epoch 1261/2003 completed. Loss: 0.0580
+Epoch 1262/2003 completed. Loss: 0.0519
+Epoch 1263/2003 completed. Loss: 0.0527
+Epoch 1264/2003 completed. Loss: 0.0534
+Epoch 1265/2003 completed. Loss: 0.0555
+Epoch 1266/2003 completed. Loss: 0.0557
+Epoch 1267/2003 completed. Loss: 0.0591
+Epoch 1268/2003 completed. Loss: 0.0550
+Epoch 1269/2003 completed. Loss: 0.0603
+Epoch 1270/2003 completed. Loss: 0.0525
+Epoch 1271/2003 completed. Loss: 0.0517
+Epoch 1272/2003 completed. Loss: 0.0498
+Epoch 1273/2003 completed. Loss: 0.0530
+Epoch 1274/2003 completed. Loss: 0.0531
+Epoch 1275/2003 completed. Loss: 0.0525
+Epoch 1276/2003 completed. Loss: 0.0536
+Epoch 1277/2003 completed. Loss: 0.0500
+Epoch 1278/2003 completed. Loss: 0.0536
+Epoch 1279/2003 completed. Loss: 0.0536
+Epoch 1280/2003 completed. Loss: 0.0532
+Epoch 1281/2003 completed. Loss: 0.0578
+Epoch 1282/2003 completed. Loss: 0.0524
+Epoch 1283/2003 completed. Loss: 0.0548
+Epoch 1284/2003 completed. Loss: 0.0530
+Epoch 1285/2003 completed. Loss: 0.0466
+Epoch 1286/2003 completed. Loss: 0.0521
+Epoch 1287/2003 completed. Loss: 0.0545
+Epoch 1288/2003 completed. Loss: 0.0490
+Epoch 1289/2003 completed. Loss: 0.0567
+Epoch 1290/2003 completed. Loss: 0.0524
+Epoch 1291/2003 completed. Loss: 0.0518
+Epoch 1292/2003 completed. Loss: 0.0512
+Epoch 1293/2003 completed. Loss: 0.0509
+Epoch 1294/2003 completed. Loss: 0.0519
+Epoch 1295/2003 completed. Loss: 0.0544
+Epoch 1296/2003 completed. Loss: 0.0473
+Epoch 1297/2003 completed. Loss: 0.0515
+Epoch 1298/2003 completed. Loss: 0.0561
+Epoch 1299/2003 completed. Loss: 0.0507
+Epoch 1300/2003 completed. Loss: 0.0547
+Epoch 1301/2003 completed. Loss: 0.0494
+Epoch 1302/2003 completed. Loss: 0.0499
+Epoch 1303/2003 completed. Loss: 0.0523
+Epoch 1304/2003 completed. Loss: 0.0510
+Epoch 1305/2003 completed. Loss: 0.0535
+Epoch 1306/2003 completed. Loss: 0.0538
+Epoch 1307/2003 completed. Loss: 0.0529
+Epoch 1308/2003 completed. Loss: 0.0505
+Epoch 1309/2003 completed. Loss: 0.0493
+Epoch 1310/2003 completed. Loss: 0.0487
+Epoch 1311/2003 completed. Loss: 0.0622
+Epoch 1312/2003 completed. Loss: 0.0560
+Epoch 1313/2003 completed. Loss: 0.0594
+Epoch 1314/2003 completed. Loss: 0.0536
+Epoch 1315/2003 completed. Loss: 0.0502
+Epoch 1316/2003 completed. Loss: 0.0572
+Epoch 1317/2003 completed. Loss: 0.0489
+Epoch 1318/2003 completed. Loss: 0.0485
+Epoch 1319/2003 completed. Loss: 0.0528
+Epoch 1320/2003 completed. Loss: 0.0581
+Epoch 1321/2003 completed. Loss: 0.0518
+Epoch 1322/2003 completed. Loss: 0.0541
+Epoch 1323/2003 completed. Loss: 0.0519
+Epoch 1324/2003 completed. Loss: 0.0533
+Epoch 1325/2003 completed. Loss: 0.0542
+Epoch 1326/2003 completed. Loss: 0.0571
+Epoch 1327/2003 completed. Loss: 0.0552
+Epoch 1328/2003 completed. Loss: 0.0522
+Epoch 1329/2003 completed. Loss: 0.0528
+Epoch 1330/2003 completed. Loss: 0.0559
+Epoch 1331/2003 completed. Loss: 0.0496
+Epoch 1332/2003 completed. Loss: 0.0538
+Epoch 1333/2003 completed. Loss: 0.0541
+Epoch 1334/2003 completed. Loss: 0.0539
+Epoch 1335/2003 completed. Loss: 0.0528
+Epoch 1336/2003 completed. Loss: 0.0516
+Epoch 1337/2003 completed. Loss: 0.0546
+Epoch 1338/2003 completed. Loss: 0.0537
+Epoch 1339/2003 completed. Loss: 0.0497
+Epoch 1340/2003 completed. Loss: 0.0501
+Epoch 1341/2003 completed. Loss: 0.0482
+Epoch 1342/2003 completed. Loss: 0.0459
+Epoch 1343/2003 completed. Loss: 0.0539
+Epoch 1344/2003 completed. Loss: 0.0562
+Epoch 1345/2003 completed. Loss: 0.0539
+Epoch 1346/2003 completed. Loss: 0.0517
+Epoch 1347/2003 completed. Loss: 0.0488
+Epoch 1348/2003 completed. Loss: 0.0545
+Epoch 1349/2003 completed. Loss: 0.0511
+Epoch 1350/2003 completed. Loss: 0.0573
+Epoch 1351/2003 completed. Loss: 0.0480
+Epoch 1352/2003 completed. Loss: 0.0539
+Epoch 1353/2003 completed. Loss: 0.0498
+Epoch 1354/2003 completed. Loss: 0.0516
+Epoch 1355/2003 completed. Loss: 0.0555
+Epoch 1356/2003 completed. Loss: 0.0471
+Epoch 1357/2003 completed. Loss: 0.0550
+Epoch 1358/2003 completed. Loss: 0.0466
+Epoch 1359/2003 completed. Loss: 0.0490
+Epoch 1360/2003 completed. Loss: 0.0578
+Epoch 1361/2003 completed. Loss: 0.0527
+Epoch 1362/2003 completed. Loss: 0.0527
+Epoch 1363/2003 completed. Loss: 0.0496
+Epoch 1364/2003 completed. Loss: 0.0475
+Epoch 1365/2003 completed. Loss: 0.0518
+Epoch 1366/2003 completed. Loss: 0.0489
+Epoch 1367/2003 completed. Loss: 0.0514
+Epoch 1368/2003 completed. Loss: 0.0551
+Epoch 1369/2003 completed. Loss: 0.0503
+Epoch 1370/2003 completed. Loss: 0.0555
+Epoch 1371/2003 completed. Loss: 0.0567
+Epoch 1372/2003 completed. Loss: 0.0511
+Epoch 1373/2003 completed. Loss: 0.0499
+Epoch 1374/2003 completed. Loss: 0.0503
+Epoch 1375/2003 completed. Loss: 0.0574
+Epoch 1376/2003 completed. Loss: 0.0554
+Epoch 1377/2003 completed. Loss: 0.0513
+Epoch 1378/2003 completed. Loss: 0.0493
+Epoch 1379/2003 completed. Loss: 0.0530
+Epoch 1380/2003 completed. Loss: 0.0479
+Epoch 1381/2003 completed. Loss: 0.0564
+Epoch 1382/2003 completed. Loss: 0.0561
+Epoch 1383/2003 completed. Loss: 0.0490
+Epoch 1384/2003 completed. Loss: 0.0558
+Epoch 1385/2003 completed. Loss: 0.0557
+Epoch 1386/2003 completed. Loss: 0.0534
+Epoch 1387/2003 completed. Loss: 0.0518
+Epoch 1388/2003 completed. Loss: 0.0499
+Epoch 1389/2003 completed. Loss: 0.0521
+Epoch 1390/2003 completed. Loss: 0.0500
+Epoch 1391/2003 completed. Loss: 0.0508
+Epoch 1392/2003 completed. Loss: 0.0513
+Epoch 1393/2003 completed. Loss: 0.0486
+Epoch 1394/2003 completed. Loss: 0.0494
+Epoch 1395/2003 completed. Loss: 0.0502
+Epoch 1396/2003 completed. Loss: 0.0497
+Epoch 1397/2003 completed. Loss: 0.0541
+Epoch 1398/2003 completed. Loss: 0.0521
+Epoch 1399/2003 completed. Loss: 0.0527
+Epoch 1400/2003 completed. Loss: 0.0528
+Epoch 1401/2003 completed. Loss: 0.0539
+Epoch 1402/2003 completed. Loss: 0.0468
+Epoch 1403/2003 completed. Loss: 0.0485
+Epoch 1404/2003 completed. Loss: 0.0492
+Epoch 1405/2003 completed. Loss: 0.0496
+Epoch 1406/2003 completed. Loss: 0.0528
+Epoch 1407/2003 completed. Loss: 0.0538
+Epoch 1408/2003 completed. Loss: 0.0531
+Epoch 1409/2003 completed. Loss: 0.0507
+Epoch 1410/2003 completed. Loss: 0.0537
+Epoch 1411/2003 completed. Loss: 0.0526
+Epoch 1412/2003 completed. Loss: 0.0523
+Epoch 1413/2003 completed. Loss: 0.0526
+Epoch 1414/2003 completed. Loss: 0.0501
+Epoch 1415/2003 completed. Loss: 0.0507
+Epoch 1416/2003 completed. Loss: 0.0535
+Epoch 1417/2003 completed. Loss: 0.0515
+Epoch 1418/2003 completed. Loss: 0.0562
+Epoch 1419/2003 completed. Loss: 0.0505
+Epoch 1420/2003 completed. Loss: 0.0485
+Epoch 1421/2003 completed. Loss: 0.0535
+Epoch 1422/2003 completed. Loss: 0.0509
+Epoch 1423/2003 completed. Loss: 0.0494
+Epoch 1424/2003 completed. Loss: 0.0578
+Epoch 1425/2003 completed. Loss: 0.0472
+Epoch 1426/2003 completed. Loss: 0.0497
+Epoch 1427/2003 completed. Loss: 0.0521
+Epoch 1428/2003 completed. Loss: 0.0550
+Epoch 1429/2003 completed. Loss: 0.0505
+Epoch 1430/2003 completed. Loss: 0.0517
+Epoch 1431/2003 completed. Loss: 0.0504
+Epoch 1432/2003 completed. Loss: 0.0525
+Epoch 1433/2003 completed. Loss: 0.0501
+Epoch 1434/2003 completed. Loss: 0.0515
+Epoch 1435/2003 completed. Loss: 0.0512
+Epoch 1436/2003 completed. Loss: 0.0529
+Epoch 1437/2003 completed. Loss: 0.0496
+Epoch 1438/2003 completed. Loss: 0.0491
+Epoch 1439/2003 completed. Loss: 0.0506
+Epoch 1440/2003 completed. Loss: 0.0493
+Epoch 1441/2003 completed. Loss: 0.0499
+Epoch 1442/2003 completed. Loss: 0.0507
+Epoch 1443/2003 completed. Loss: 0.0510
+Epoch 1444/2003 completed. Loss: 0.0496
+Epoch 1445/2003 completed. Loss: 0.0516
+Epoch 1446/2003 completed. Loss: 0.0506
+Epoch 1447/2003 completed. Loss: 0.0507
+Epoch 1448/2003 completed. Loss: 0.0539
+Epoch 1449/2003 completed. Loss: 0.0526
+Epoch 1450/2003 completed. Loss: 0.0508
+Epoch 1451/2003 completed. Loss: 0.0512
+Epoch 1452/2003 completed. Loss: 0.0454
+Epoch 1453/2003 completed. Loss: 0.0503
+Epoch 1454/2003 completed. Loss: 0.0515
+Epoch 1455/2003 completed. Loss: 0.0487
+Epoch 1456/2003 completed. Loss: 0.0468
+Epoch 1457/2003 completed. Loss: 0.0515
+Epoch 1458/2003 completed. Loss: 0.0456
+Epoch 1459/2003 completed. Loss: 0.0530
+Epoch 1460/2003 completed. Loss: 0.0419
+Epoch 1461/2003 completed. Loss: 0.0498
+Epoch 1462/2003 completed. Loss: 0.0518
+Epoch 1463/2003 completed. Loss: 0.0482
+Epoch 1464/2003 completed. Loss: 0.0526
+Epoch 1465/2003 completed. Loss: 0.0492
+Epoch 1466/2003 completed. Loss: 0.0573
+Epoch 1467/2003 completed. Loss: 0.0485
+Epoch 1468/2003 completed. Loss: 0.0495
+Epoch 1469/2003 completed. Loss: 0.0492
+Epoch 1470/2003 completed. Loss: 0.0532
+Epoch 1471/2003 completed. Loss: 0.0478
+Epoch 1472/2003 completed. Loss: 0.0505
+Epoch 1473/2003 completed. Loss: 0.0517
+Epoch 1474/2003 completed. Loss: 0.0452
+Epoch 1475/2003 completed. Loss: 0.0517
+Epoch 1476/2003 completed. Loss: 0.0469
+Epoch 1477/2003 completed. Loss: 0.0481
+Epoch 1478/2003 completed. Loss: 0.0519
+Epoch 1479/2003 completed. Loss: 0.0518
+Epoch 1480/2003 completed. Loss: 0.0488
+Epoch 1481/2003 completed. Loss: 0.0512
+Epoch 1482/2003 completed. Loss: 0.0515
+Epoch 1483/2003 completed. Loss: 0.0440
+Epoch 1484/2003 completed. Loss: 0.0514
+Epoch 1485/2003 completed. Loss: 0.0485
+Epoch 1486/2003 completed. Loss: 0.0491
+Epoch 1487/2003 completed. Loss: 0.0534
+Epoch 1488/2003 completed. Loss: 0.0479
+Epoch 1489/2003 completed. Loss: 0.0502
+Epoch 1490/2003 completed. Loss: 0.0474
+Epoch 1491/2003 completed. Loss: 0.0496
+Epoch 1492/2003 completed. Loss: 0.0499
+Epoch 1493/2003 completed. Loss: 0.0480
+Epoch 1494/2003 completed. Loss: 0.0492
+Epoch 1495/2003 completed. Loss: 0.0519
+Epoch 1496/2003 completed. Loss: 0.0527
+Epoch 1497/2003 completed. Loss: 0.0581
+Epoch 1498/2003 completed. Loss: 0.0476
+Epoch 1499/2003 completed. Loss: 0.0504
+Epoch 1500/2003 completed. Loss: 0.0490
+Epoch 1501/2003 completed. Loss: 0.0501
+Epoch 1502/2003 completed. Loss: 0.0577
+Epoch 1503/2003 completed. Loss: 0.0518
+Epoch 1504/2003 completed. Loss: 0.0491
+Epoch 1505/2003 completed. Loss: 0.0544
+Epoch 1506/2003 completed. Loss: 0.0498
+Epoch 1507/2003 completed. Loss: 0.0482
+Epoch 1508/2003 completed. Loss: 0.0449
+Epoch 1509/2003 completed. Loss: 0.0453
+Epoch 1510/2003 completed. Loss: 0.0491
+Epoch 1511/2003 completed. Loss: 0.0454
+Epoch 1512/2003 completed. Loss: 0.0522
+Epoch 1513/2003 completed. Loss: 0.0505
+Epoch 1514/2003 completed. Loss: 0.0512
+Epoch 1515/2003 completed. Loss: 0.0505
+Epoch 1516/2003 completed. Loss: 0.0506
+Epoch 1517/2003 completed. Loss: 0.0500
+Epoch 1518/2003 completed. Loss: 0.0501
+Epoch 1519/2003 completed. Loss: 0.0527
+Epoch 1520/2003 completed. Loss: 0.0530
+Epoch 1521/2003 completed. Loss: 0.0456
+Epoch 1522/2003 completed. Loss: 0.0487
+Epoch 1523/2003 completed. Loss: 0.0457
+Epoch 1524/2003 completed. Loss: 0.0466
+Epoch 1525/2003 completed. Loss: 0.0505
+Epoch 1526/2003 completed. Loss: 0.0506
+Epoch 1527/2003 completed. Loss: 0.0523
+Epoch 1528/2003 completed. Loss: 0.0521
+Epoch 1529/2003 completed. Loss: 0.0482
+Epoch 1530/2003 completed. Loss: 0.0477
+Epoch 1531/2003 completed. Loss: 0.0458
+Epoch 1532/2003 completed. Loss: 0.0500
+Epoch 1533/2003 completed. Loss: 0.0493
+Epoch 1534/2003 completed. Loss: 0.0499
+Epoch 1535/2003 completed. Loss: 0.0445
+Epoch 1536/2003 completed. Loss: 0.0468
+Epoch 1537/2003 completed. Loss: 0.0511
+Epoch 1538/2003 completed. Loss: 0.0454
+Epoch 1539/2003 completed. Loss: 0.0467
+Epoch 1540/2003 completed. Loss: 0.0469
+Epoch 1541/2003 completed. Loss: 0.0472
+Epoch 1542/2003 completed. Loss: 0.0443
+Epoch 1543/2003 completed. Loss: 0.0526
+Epoch 1544/2003 completed. Loss: 0.0523
+Epoch 1545/2003 completed. Loss: 0.0475
+Epoch 1546/2003 completed. Loss: 0.0521
+Epoch 1547/2003 completed. Loss: 0.0487
+Epoch 1548/2003 completed. Loss: 0.0469
+Epoch 1549/2003 completed. Loss: 0.0474
+Epoch 1550/2003 completed. Loss: 0.0466
+Epoch 1551/2003 completed. Loss: 0.0466
+Epoch 1552/2003 completed. Loss: 0.0480
+Epoch 1553/2003 completed. Loss: 0.0531
+Epoch 1554/2003 completed. Loss: 0.0472
+Epoch 1555/2003 completed. Loss: 0.0519
+Epoch 1556/2003 completed. Loss: 0.0473
+Epoch 1557/2003 completed. Loss: 0.0516
+Epoch 1558/2003 completed. Loss: 0.0535
+Epoch 1559/2003 completed. Loss: 0.0532
+Epoch 1560/2003 completed. Loss: 0.0530
+Epoch 1561/2003 completed. Loss: 0.0496
+Epoch 1562/2003 completed. Loss: 0.0511
+Epoch 1563/2003 completed. Loss: 0.0489
+Epoch 1564/2003 completed. Loss: 0.0526
+Epoch 1565/2003 completed. Loss: 0.0431
+Epoch 1566/2003 completed. Loss: 0.0548
+Epoch 1567/2003 completed. Loss: 0.0485
+Epoch 1568/2003 completed. Loss: 0.0524
+Epoch 1569/2003 completed. Loss: 0.0477
+Epoch 1570/2003 completed. Loss: 0.0538
+Epoch 1571/2003 completed. Loss: 0.0530
+Epoch 1572/2003 completed. Loss: 0.0520
+Epoch 1573/2003 completed. Loss: 0.0458
+Epoch 1574/2003 completed. Loss: 0.0482
+Epoch 1575/2003 completed. Loss: 0.0480
+Epoch 1576/2003 completed. Loss: 0.0492
+Epoch 1577/2003 completed. Loss: 0.0475
+Epoch 1578/2003 completed. Loss: 0.0432
+Epoch 1579/2003 completed. Loss: 0.0517
+Epoch 1580/2003 completed. Loss: 0.0512
+Epoch 1581/2003 completed. Loss: 0.0409
+Epoch 1582/2003 completed. Loss: 0.0485
+Epoch 1583/2003 completed. Loss: 0.0497
+Epoch 1584/2003 completed. Loss: 0.0522
+Epoch 1585/2003 completed. Loss: 0.0474
+Epoch 1586/2003 completed. Loss: 0.0507
+Epoch 1587/2003 completed. Loss: 0.0468
+Epoch 1588/2003 completed. Loss: 0.0457
+Epoch 1589/2003 completed. Loss: 0.0474
+Epoch 1590/2003 completed. Loss: 0.0489
+Epoch 1591/2003 completed. Loss: 0.0426
+Epoch 1592/2003 completed. Loss: 0.0449
+Epoch 1593/2003 completed. Loss: 0.0474
+Epoch 1594/2003 completed. Loss: 0.0535
+Epoch 1595/2003 completed. Loss: 0.0515
+Epoch 1596/2003 completed. Loss: 0.0500
+Epoch 1597/2003 completed. Loss: 0.0508
+Epoch 1598/2003 completed. Loss: 0.0486
+Epoch 1599/2003 completed. Loss: 0.0471
+Epoch 1600/2003 completed. Loss: 0.0529
+Epoch 1601/2003 completed. Loss: 0.0480
+Epoch 1602/2003 completed. Loss: 0.0456
+Epoch 1603/2003 completed. Loss: 0.0449
+Epoch 1604/2003 completed. Loss: 0.0491
+Epoch 1605/2003 completed. Loss: 0.0488
+Epoch 1606/2003 completed. Loss: 0.0470
+Epoch 1607/2003 completed. Loss: 0.0443
+Epoch 1608/2003 completed. Loss: 0.0464
+Epoch 1609/2003 completed. Loss: 0.0502
+Epoch 1610/2003 completed. Loss: 0.0456
+Epoch 1611/2003 completed. Loss: 0.0451
+Epoch 1612/2003 completed. Loss: 0.0487
+Epoch 1613/2003 completed. Loss: 0.0477
+Epoch 1614/2003 completed. Loss: 0.0539
+Epoch 1615/2003 completed. Loss: 0.0457
+Epoch 1616/2003 completed. Loss: 0.0482
+Epoch 1617/2003 completed. Loss: 0.0449
+Epoch 1618/2003 completed. Loss: 0.0456
+Epoch 1619/2003 completed. Loss: 0.0470
+Epoch 1620/2003 completed. Loss: 0.0465
+Epoch 1621/2003 completed. Loss: 0.0493
+Epoch 1622/2003 completed. Loss: 0.0481
+Epoch 1623/2003 completed. Loss: 0.0481
+Epoch 1624/2003 completed. Loss: 0.0435
+Epoch 1625/2003 completed. Loss: 0.0483
+Epoch 1626/2003 completed. Loss: 0.0487
+Epoch 1627/2003 completed. Loss: 0.0484
+Epoch 1628/2003 completed. Loss: 0.0445
+Epoch 1629/2003 completed. Loss: 0.0493
+Epoch 1630/2003 completed. Loss: 0.0484
+Epoch 1631/2003 completed. Loss: 0.0467
+Epoch 1632/2003 completed. Loss: 0.0498
+Epoch 1633/2003 completed. Loss: 0.0502
+Epoch 1634/2003 completed. Loss: 0.0474
+Epoch 1635/2003 completed. Loss: 0.0466
+Epoch 1636/2003 completed. Loss: 0.0472
+Epoch 1637/2003 completed. Loss: 0.0436
+Epoch 1638/2003 completed. Loss: 0.0439
+Epoch 1639/2003 completed. Loss: 0.0417
+Epoch 1640/2003 completed. Loss: 0.0481
+Epoch 1641/2003 completed. Loss: 0.0501
+Epoch 1642/2003 completed. Loss: 0.0480
+Epoch 1643/2003 completed. Loss: 0.0499
+Epoch 1644/2003 completed. Loss: 0.0450
+Epoch 1645/2003 completed. Loss: 0.0538
+Epoch 1646/2003 completed. Loss: 0.0478
+Epoch 1647/2003 completed. Loss: 0.0466
+Epoch 1648/2003 completed. Loss: 0.0521
+Epoch 1649/2003 completed. Loss: 0.0480
+Epoch 1650/2003 completed. Loss: 0.0505
+Epoch 1651/2003 completed. Loss: 0.0454
+Epoch 1652/2003 completed. Loss: 0.0502
+Epoch 1653/2003 completed. Loss: 0.0426
+Epoch 1654/2003 completed. Loss: 0.0482
+Epoch 1655/2003 completed. Loss: 0.0517
+Epoch 1656/2003 completed. Loss: 0.0466
+Epoch 1657/2003 completed. Loss: 0.0502
+Epoch 1658/2003 completed. Loss: 0.0493
+Epoch 1659/2003 completed. Loss: 0.0468
+Epoch 1660/2003 completed. Loss: 0.0462
+Epoch 1661/2003 completed. Loss: 0.0412
+Epoch 1662/2003 completed. Loss: 0.0451
+Epoch 1663/2003 completed. Loss: 0.0451
+Epoch 1664/2003 completed. Loss: 0.0496
+Epoch 1665/2003 completed. Loss: 0.0435
+Epoch 1666/2003 completed. Loss: 0.0456
+Epoch 1667/2003 completed. Loss: 0.0401
+Epoch 1668/2003 completed. Loss: 0.0496
+Epoch 1669/2003 completed. Loss: 0.0474
+Epoch 1670/2003 completed. Loss: 0.0451
+Epoch 1671/2003 completed. Loss: 0.0508
+Epoch 1672/2003 completed. Loss: 0.0426
+Epoch 1673/2003 completed. Loss: 0.0469
+Epoch 1674/2003 completed. Loss: 0.0458
+Epoch 1675/2003 completed. Loss: 0.0479
+Epoch 1676/2003 completed. Loss: 0.0445
+Epoch 1677/2003 completed. Loss: 0.0433
+Epoch 1678/2003 completed. Loss: 0.0444
+Epoch 1679/2003 completed. Loss: 0.0449
+Epoch 1680/2003 completed. Loss: 0.0501
+Epoch 1681/2003 completed. Loss: 0.0495
+Epoch 1682/2003 completed. Loss: 0.0489
+Epoch 1683/2003 completed. Loss: 0.0459
+Epoch 1684/2003 completed. Loss: 0.0458
+Epoch 1685/2003 completed. Loss: 0.0518
+Epoch 1686/2003 completed. Loss: 0.0472
+Epoch 1687/2003 completed. Loss: 0.0484
+Epoch 1688/2003 completed. Loss: 0.0489
+Epoch 1689/2003 completed. Loss: 0.0457
+Epoch 1690/2003 completed. Loss: 0.0471
+Epoch 1691/2003 completed. Loss: 0.0458
+Epoch 1692/2003 completed. Loss: 0.0497
+Epoch 1693/2003 completed. Loss: 0.0476
+Epoch 1694/2003 completed. Loss: 0.0485
+Epoch 1695/2003 completed. Loss: 0.0498
+Epoch 1696/2003 completed. Loss: 0.0437
+Epoch 1697/2003 completed. Loss: 0.0453
+Epoch 1698/2003 completed. Loss: 0.0473
+Epoch 1699/2003 completed. Loss: 0.0465
+Epoch 1700/2003 completed. Loss: 0.0452
+Epoch 1701/2003 completed. Loss: 0.0489
+Epoch 1702/2003 completed. Loss: 0.0452
+Epoch 1703/2003 completed. Loss: 0.0485
+Epoch 1704/2003 completed. Loss: 0.0449
+Epoch 1705/2003 completed. Loss: 0.0423
+Epoch 1706/2003 completed. Loss: 0.0422
+Epoch 1707/2003 completed. Loss: 0.0418
+Epoch 1708/2003 completed. Loss: 0.0408
+Epoch 1709/2003 completed. Loss: 0.0467
+Epoch 1710/2003 completed. Loss: 0.0480
+Epoch 1711/2003 completed. Loss: 0.0492
+Epoch 1712/2003 completed. Loss: 0.0514
+Epoch 1713/2003 completed. Loss: 0.0484
+Epoch 1714/2003 completed. Loss: 0.0464
+Epoch 1715/2003 completed. Loss: 0.0507
+Epoch 1716/2003 completed. Loss: 0.0434
+Epoch 1717/2003 completed. Loss: 0.0481
+Epoch 1718/2003 completed. Loss: 0.0476
+Epoch 1719/2003 completed. Loss: 0.0515
+Epoch 1720/2003 completed. Loss: 0.0492
+Epoch 1721/2003 completed. Loss: 0.0419
+Epoch 1722/2003 completed. Loss: 0.0496
+Epoch 1723/2003 completed. Loss: 0.0444
+Epoch 1724/2003 completed. Loss: 0.0486
+Epoch 1725/2003 completed. Loss: 0.0416
+Epoch 1726/2003 completed. Loss: 0.0474
+Epoch 1727/2003 completed. Loss: 0.0455
+Epoch 1728/2003 completed. Loss: 0.0482
+Epoch 1729/2003 completed. Loss: 0.0483
+Epoch 1730/2003 completed. Loss: 0.0435
+Epoch 1731/2003 completed. Loss: 0.0503
+Epoch 1732/2003 completed. Loss: 0.0498
+Epoch 1733/2003 completed. Loss: 0.0448
+Epoch 1734/2003 completed. Loss: 0.0473
+Epoch 1735/2003 completed. Loss: 0.0447
+Epoch 1736/2003 completed. Loss: 0.0495
+Epoch 1737/2003 completed. Loss: 0.0478
+Epoch 1738/2003 completed. Loss: 0.0527
+Epoch 1739/2003 completed. Loss: 0.0445
+Epoch 1740/2003 completed. Loss: 0.0480
+Epoch 1741/2003 completed. Loss: 0.0433
+Epoch 1742/2003 completed. Loss: 0.0495
+Epoch 1743/2003 completed. Loss: 0.0488
+Epoch 1744/2003 completed. Loss: 0.0436
+Epoch 1745/2003 completed. Loss: 0.0477
+Epoch 1746/2003 completed. Loss: 0.0461
+Epoch 1747/2003 completed. Loss: 0.0438
+Epoch 1748/2003 completed. Loss: 0.0453
+Epoch 1749/2003 completed. Loss: 0.0521
+Epoch 1750/2003 completed. Loss: 0.0454
+Epoch 1751/2003 completed. Loss: 0.0479
+Epoch 1752/2003 completed. Loss: 0.0456
+Epoch 1753/2003 completed. Loss: 0.0482
+Epoch 1754/2003 completed. Loss: 0.0422
+Epoch 1755/2003 completed. Loss: 0.0458
+Epoch 1756/2003 completed. Loss: 0.0456
+Epoch 1757/2003 completed. Loss: 0.0469
+Epoch 1758/2003 completed. Loss: 0.0492
+Epoch 1759/2003 completed. Loss: 0.0430
+Epoch 1760/2003 completed. Loss: 0.0501
+Epoch 1761/2003 completed. Loss: 0.0444
+Epoch 1762/2003 completed. Loss: 0.0465
+Epoch 1763/2003 completed. Loss: 0.0455
+Epoch 1764/2003 completed. Loss: 0.0464
+Epoch 1765/2003 completed. Loss: 0.0451
+Epoch 1766/2003 completed. Loss: 0.0457
+Epoch 1767/2003 completed. Loss: 0.0435
+Epoch 1768/2003 completed. Loss: 0.0413
+Epoch 1769/2003 completed. Loss: 0.0492
+Epoch 1770/2003 completed. Loss: 0.0445
+Epoch 1771/2003 completed. Loss: 0.0482
+Epoch 1772/2003 completed. Loss: 0.0462
+Epoch 1773/2003 completed. Loss: 0.0499
+Epoch 1774/2003 completed. Loss: 0.0436
+Epoch 1775/2003 completed. Loss: 0.0471
+Epoch 1776/2003 completed. Loss: 0.0472
+Epoch 1777/2003 completed. Loss: 0.0467
+Epoch 1778/2003 completed. Loss: 0.0517
+Epoch 1779/2003 completed. Loss: 0.0473
+Epoch 1780/2003 completed. Loss: 0.0412
+Epoch 1781/2003 completed. Loss: 0.0493
+Epoch 1782/2003 completed. Loss: 0.0467
+Epoch 1783/2003 completed. Loss: 0.0446
+Epoch 1784/2003 completed. Loss: 0.0426
+Epoch 1785/2003 completed. Loss: 0.0471
+Epoch 1786/2003 completed. Loss: 0.0467
+Epoch 1787/2003 completed. Loss: 0.0505
+Epoch 1788/2003 completed. Loss: 0.0428
+Epoch 1789/2003 completed. Loss: 0.0418
+Epoch 1790/2003 completed. Loss: 0.0390
+Epoch 1791/2003 completed. Loss: 0.0480
+Epoch 1792/2003 completed. Loss: 0.0482
+Epoch 1793/2003 completed. Loss: 0.0396
+Epoch 1794/2003 completed. Loss: 0.0467
+Epoch 1795/2003 completed. Loss: 0.0419
+Epoch 1796/2003 completed. Loss: 0.0447
+Epoch 1797/2003 completed. Loss: 0.0463
+Epoch 1798/2003 completed. Loss: 0.0452
+Epoch 1799/2003 completed. Loss: 0.0413
+Epoch 1800/2003 completed. Loss: 0.0444
+Epoch 1801/2003 completed. Loss: 0.0424
+Epoch 1802/2003 completed. Loss: 0.0425
+Epoch 1803/2003 completed. Loss: 0.0403
+Epoch 1804/2003 completed. Loss: 0.0410
+Epoch 1805/2003 completed. Loss: 0.0457
+Epoch 1806/2003 completed. Loss: 0.0433
+Epoch 1807/2003 completed. Loss: 0.0458
+Epoch 1808/2003 completed. Loss: 0.0467
+Epoch 1809/2003 completed. Loss: 0.0446
+Epoch 1810/2003 completed. Loss: 0.0442
+Epoch 1811/2003 completed. Loss: 0.0428
+Epoch 1812/2003 completed. Loss: 0.0430
+Epoch 1813/2003 completed. Loss: 0.0472
+Epoch 1814/2003 completed. Loss: 0.0501
+Epoch 1815/2003 completed. Loss: 0.0488
+Epoch 1816/2003 completed. Loss: 0.0466
+Epoch 1817/2003 completed. Loss: 0.0408
+Epoch 1818/2003 completed. Loss: 0.0499
+Epoch 1819/2003 completed. Loss: 0.0461
+Epoch 1820/2003 completed. Loss: 0.0494
+Epoch 1821/2003 completed. Loss: 0.0455
+Epoch 1822/2003 completed. Loss: 0.0469
+Epoch 1823/2003 completed. Loss: 0.0449
+Epoch 1824/2003 completed. Loss: 0.0433
+Epoch 1825/2003 completed. Loss: 0.0459
+Epoch 1826/2003 completed. Loss: 0.0455
+Epoch 1827/2003 completed. Loss: 0.0483
+Epoch 1828/2003 completed. Loss: 0.0433
+Epoch 1829/2003 completed. Loss: 0.0433
+Epoch 1830/2003 completed. Loss: 0.0471
+Epoch 1831/2003 completed. Loss: 0.0483
+Epoch 1832/2003 completed. Loss: 0.0423
+Epoch 1833/2003 completed. Loss: 0.0414
+Epoch 1834/2003 completed. Loss: 0.0489
+Epoch 1835/2003 completed. Loss: 0.0474
+Epoch 1836/2003 completed. Loss: 0.0503
+Epoch 1837/2003 completed. Loss: 0.0474
+Epoch 1838/2003 completed. Loss: 0.0481
+Epoch 1839/2003 completed. Loss: 0.0469
+Epoch 1840/2003 completed. Loss: 0.0508
+Epoch 1841/2003 completed. Loss: 0.0457
+Epoch 1842/2003 completed. Loss: 0.0419
+Epoch 1843/2003 completed. Loss: 0.0453
+Epoch 1844/2003 completed. Loss: 0.0478
+Epoch 1845/2003 completed. Loss: 0.0443
+Epoch 1846/2003 completed. Loss: 0.0429
+Epoch 1847/2003 completed. Loss: 0.0453
+Epoch 1848/2003 completed. Loss: 0.0442
+Epoch 1849/2003 completed. Loss: 0.0473
+Epoch 1850/2003 completed. Loss: 0.0437
+Epoch 1851/2003 completed. Loss: 0.0480
+Epoch 1852/2003 completed. Loss: 0.0467
+Epoch 1853/2003 completed. Loss: 0.0500
+Epoch 1854/2003 completed. Loss: 0.0407
+Epoch 1855/2003 completed. Loss: 0.0417
+Epoch 1856/2003 completed. Loss: 0.0418
+Epoch 1857/2003 completed. Loss: 0.0474
+Epoch 1858/2003 completed. Loss: 0.0462
+Epoch 1859/2003 completed. Loss: 0.0435
+Epoch 1860/2003 completed. Loss: 0.0429
+Epoch 1861/2003 completed. Loss: 0.0471
+Epoch 1862/2003 completed. Loss: 0.0491
+Epoch 1863/2003 completed. Loss: 0.0480
+Epoch 1864/2003 completed. Loss: 0.0440
+Epoch 1865/2003 completed. Loss: 0.0477
+Epoch 1866/2003 completed. Loss: 0.0476
+Epoch 1867/2003 completed. Loss: 0.0430
+Epoch 1868/2003 completed. Loss: 0.0438
+Epoch 1869/2003 completed. Loss: 0.0480
+Epoch 1870/2003 completed. Loss: 0.0454
+Epoch 1871/2003 completed. Loss: 0.0459
+Epoch 1872/2003 completed. Loss: 0.0447
+Epoch 1873/2003 completed. Loss: 0.0426
+Epoch 1874/2003 completed. Loss: 0.0406
+Epoch 1875/2003 completed. Loss: 0.0424
+Epoch 1876/2003 completed. Loss: 0.0487
+Epoch 1877/2003 completed. Loss: 0.0506
+Epoch 1878/2003 completed. Loss: 0.0396
+Epoch 1879/2003 completed. Loss: 0.0376
+Epoch 1880/2003 completed. Loss: 0.0452
+Epoch 1881/2003 completed. Loss: 0.0439
+Epoch 1882/2003 completed. Loss: 0.0512
+Epoch 1883/2003 completed. Loss: 0.0418
+Epoch 1884/2003 completed. Loss: 0.0425
+Epoch 1885/2003 completed. Loss: 0.0471
+Epoch 1886/2003 completed. Loss: 0.0466
+Epoch 1887/2003 completed. Loss: 0.0425
+Epoch 1888/2003 completed. Loss: 0.0441
+Epoch 1889/2003 completed. Loss: 0.0465
+Epoch 1890/2003 completed. Loss: 0.0455
+Epoch 1891/2003 completed. Loss: 0.0399
+Epoch 1892/2003 completed. Loss: 0.0462
+Epoch 1893/2003 completed. Loss: 0.0454
+Epoch 1894/2003 completed. Loss: 0.0436
+Epoch 1895/2003 completed. Loss: 0.0468
+Epoch 1896/2003 completed. Loss: 0.0445
+Epoch 1897/2003 completed. Loss: 0.0427
+Epoch 1898/2003 completed. Loss: 0.0441
+Epoch 1899/2003 completed. Loss: 0.0412
+Epoch 1900/2003 completed. Loss: 0.0510
+Epoch 1901/2003 completed. Loss: 0.0431
+Epoch 1902/2003 completed. Loss: 0.0476
+Epoch 1903/2003 completed. Loss: 0.0493
+Epoch 1904/2003 completed. Loss: 0.0418
+Epoch 1905/2003 completed. Loss: 0.0494
+Epoch 1906/2003 completed. Loss: 0.0441
+Epoch 1907/2003 completed. Loss: 0.0423
+Epoch 1908/2003 completed. Loss: 0.0459
+Epoch 1909/2003 completed. Loss: 0.0399
+Epoch 1910/2003 completed. Loss: 0.0423
+Epoch 1911/2003 completed. Loss: 0.0416
+Epoch 1912/2003 completed. Loss: 0.0439
+Epoch 1913/2003 completed. Loss: 0.0472
+Epoch 1914/2003 completed. Loss: 0.0439
+Epoch 1915/2003 completed. Loss: 0.0429
+Epoch 1916/2003 completed. Loss: 0.0435
+Epoch 1917/2003 completed. Loss: 0.0384
+Epoch 1918/2003 completed. Loss: 0.0373
+Epoch 1919/2003 completed. Loss: 0.0465
+Epoch 1920/2003 completed. Loss: 0.0410
+Epoch 1921/2003 completed. Loss: 0.0474
+Epoch 1922/2003 completed. Loss: 0.0431
+Epoch 1923/2003 completed. Loss: 0.0456
+Epoch 1924/2003 completed. Loss: 0.0433
+Epoch 1925/2003 completed. Loss: 0.0440
+Epoch 1926/2003 completed. Loss: 0.0449
+Epoch 1927/2003 completed. Loss: 0.0482
+Epoch 1928/2003 completed. Loss: 0.0469
+Epoch 1929/2003 completed. Loss: 0.0455
+Epoch 1930/2003 completed. Loss: 0.0362
+Epoch 1931/2003 completed. Loss: 0.0467
+Epoch 1932/2003 completed. Loss: 0.0390
+Epoch 1933/2003 completed. Loss: 0.0476
+Epoch 1934/2003 completed. Loss: 0.0472
+Epoch 1935/2003 completed. Loss: 0.0445
+Epoch 1936/2003 completed. Loss: 0.0448
+Epoch 1937/2003 completed. Loss: 0.0443
+Epoch 1938/2003 completed. Loss: 0.0455
+Epoch 1939/2003 completed. Loss: 0.0486
+Epoch 1940/2003 completed. Loss: 0.0414
+Epoch 1941/2003 completed. Loss: 0.0443
+Epoch 1942/2003 completed. Loss: 0.0404
+Epoch 1943/2003 completed. Loss: 0.0427
+Epoch 1944/2003 completed. Loss: 0.0393
+Epoch 1945/2003 completed. Loss: 0.0443
+Epoch 1946/2003 completed. Loss: 0.0416
+Epoch 1947/2003 completed. Loss: 0.0429
+Epoch 1948/2003 completed. Loss: 0.0440
+Epoch 1949/2003 completed. Loss: 0.0498
+Epoch 1950/2003 completed. Loss: 0.0520
+Epoch 1951/2003 completed. Loss: 0.0454
+Epoch 1952/2003 completed. Loss: 0.0423
+Epoch 1953/2003 completed. Loss: 0.0458
+Epoch 1954/2003 completed. Loss: 0.0427
+Epoch 1955/2003 completed. Loss: 0.0368
+Epoch 1956/2003 completed. Loss: 0.0415
+Epoch 1957/2003 completed. Loss: 0.0414
+Epoch 1958/2003 completed. Loss: 0.0427
+Epoch 1959/2003 completed. Loss: 0.0404
+Epoch 1960/2003 completed. Loss: 0.0467
+Epoch 1961/2003 completed. Loss: 0.0444
+Epoch 1962/2003 completed. Loss: 0.0421
+Epoch 1963/2003 completed. Loss: 0.0421
+Epoch 1964/2003 completed. Loss: 0.0438
+Epoch 1965/2003 completed. Loss: 0.0484
+Epoch 1966/2003 completed. Loss: 0.0428
+Epoch 1967/2003 completed. Loss: 0.0442
+Epoch 1968/2003 completed. Loss: 0.0476
+Epoch 1969/2003 completed. Loss: 0.0414
+Epoch 1970/2003 completed. Loss: 0.0419
+Epoch 1971/2003 completed. Loss: 0.0448
+Epoch 1972/2003 completed. Loss: 0.0380
+Epoch 1973/2003 completed. Loss: 0.0476
+Epoch 1974/2003 completed. Loss: 0.0438
+Epoch 1975/2003 completed. Loss: 0.0424
+Epoch 1976/2003 completed. Loss: 0.0484
+Epoch 1977/2003 completed. Loss: 0.0437
+Epoch 1978/2003 completed. Loss: 0.0409
+Epoch 1979/2003 completed. Loss: 0.0451
+Epoch 1980/2003 completed. Loss: 0.0454
+Epoch 1981/2003 completed. Loss: 0.0464
+Epoch 1982/2003 completed. Loss: 0.0432
+Epoch 1983/2003 completed. Loss: 0.0453
+Epoch 1984/2003 completed. Loss: 0.0421
+Epoch 1985/2003 completed. Loss: 0.0443
+Epoch 1986/2003 completed. Loss: 0.0440
+Epoch 1987/2003 completed. Loss: 0.0408
+Epoch 1988/2003 completed. Loss: 0.0462
+Epoch 1989/2003 completed. Loss: 0.0480
+Epoch 1990/2003 completed. Loss: 0.0471
+Epoch 1991/2003 completed. Loss: 0.0417
+Epoch 1992/2003 completed. Loss: 0.0467
+Epoch 1993/2003 completed. Loss: 0.0421
+Epoch 1994/2003 completed. Loss: 0.0439
+Epoch 1995/2003 completed. Loss: 0.0415
+Epoch 1996/2003 completed. Loss: 0.0470
+Epoch 1997/2003 completed. Loss: 0.0422
+Epoch 1998/2003 completed. Loss: 0.0442
+Epoch 1999/2003 completed. Loss: 0.0430
+Epoch 2000/2003 completed. Loss: 0.0447
+Epoch 2001/2003 completed. Loss: 0.0437
+Epoch 2002/2003 completed. Loss: 0.0414
+Epoch 2003/2003 completed. Loss: 0.0434
+Training completed in 47737.78 seconds.
+Testing completed in 5.70 seconds.
+Accuracy: 0.9750
+Misclassification Error Rate: 0.0250
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+     Class 0       0.96      0.99      0.97        96
+     Class 1       0.99      0.96      0.98       104
+
+    accuracy                           0.97       200
+   macro avg       0.97      0.98      0.97       200
+weighted avg       0.98      0.97      0.98       200
+
