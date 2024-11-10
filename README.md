@@ -8,9 +8,9 @@
 train.csv
 Statistically evaluated dataset after refined text preprocessing for fine tuning seqClassifer.py
 
-#### Preprocessing algorithm: mimiciii_datapreprocess.ipynb
+#### Preprocessing algorithm: preprocess_mimiciii.ipynb
 MIMIC-III dataset preprocessing and statistical analysis and evaluation and further data refinement
-
+mimiciii_datapreprocess.pdf contains the codes for MIMIC III Clinical Database data preprocessing (ipynb takes long time to load)
 
 #### Bio_ClinicalBERT - Preliminary modelling - premodel.ipynb
 Uses different train.csv located in priliminary modelling git branch with 44k observations; https://github.com/midhunshyam/PPB/blob/preliminarymodel/train.csv)
