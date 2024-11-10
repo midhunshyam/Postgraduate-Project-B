@@ -28,9 +28,14 @@ You should probably TRAIN this model on a downstream task to be able to use it f
 Test time: 43.969003438949585
 [276 283] 
 [217 222]
-precision recall f1-score support
-0 0.56 0.65 0.60 655
-1 0.44 0.51 0.47 439
-accuracy 0.56 998
-macro avg 0.50 0.50 0.50 998
-weighted avg 0.50 0.50 0.56 998
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+     Class 0       0.56      0.65      0.60      655
+     Class 1       0.44      0.51      0.47      439
+
+    accuracy                           0.56      998
+   macro avg       0.50      0.50      0.50      998
+weighted avg       0.50      0.50      0.56       998
