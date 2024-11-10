@@ -31,7 +31,7 @@ seqClassifier_testconfusionmatrix.png
 seqClassifier test confusion matrix (70-30split)
 
 
-#### Finetuning algorithm testing (seqClassifier on gold standard)
+#### Finetuned model testing (seqClassifier on gold standard)
 
 goldstdtest_finetuned.png
 Goldstd test CM final tuned (seqClassifier.py)
@@ -40,7 +40,9 @@ goldstdtest_output.txt
 Fine tuned model test output on gold standard data
 
 
-#### Final model
+#### Final model 
+
+The pretrained Bio_ClinicalBERT undergoes fine-tuning twice - on MIMICIII extracted text and the goldstandard dataset to build the final model.
 
 finalmodel_goldstdtrainlosscurve.png
 Final model trained on Gold Standard data
