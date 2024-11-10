@@ -1,0 +1,50 @@
+Epoch 105/130 completed. Loss: 0.0176
+Epoch 106/130 completed. Loss: 0.0236
+Epoch 107/130 completed. Loss: 0.0112
+Epoch 108/130 completed. Loss: 0.0074
+Epoch 109/130 completed, Loss: 0.0107
+Epoch 110/130 completed. Loss: 0.0176
+Epoch 111/130 completed. Loss: 0.0092
+Epoch 112/130 completed. Loss: 0.0220
+Epoch 113/130 completed. Loss: 0.0088
+Epoch 114/130 completed. Loss: 0.0089
+Epoch 115/130 completed. Loss: 0.0071
+Epoch 116/130 completed. Loss: 0.0075
+Epoch 117/130 completed. Loss: 0.0146
+Epoch 118/130 completed. Loss: 0.0076
+Epoch 119/130 completed. Loss: 0.0107
+Epoch 120/130 completed. Loss: 0.0054
+Epoch 121/130 completed. Loss: 0.0180
+Epoch 122/130 completed. Loss: 0.0146
+Epoch 123/130 completed. Loss: 0.0092
+Epoch 124/130 completed. Loss: 0.0046
+Epoch 125/130 completed. Loss: 0.0125
+Epoch 126/130 completed. Loss: 0.0105
+Epoch 127/130 completed. Loss: 0.0189
+Epoch 128/130 completed. Loss: 0.0145
+Epoch 129/130 completed. Loss: 0.0108
+Epoch 130/130 completed. Loss: 0.0047
+
+
+Model weights saved to /home/midhun/Downloads/fine_tuned_clinical_bert_sequential_classifier_129.pt
+
+Training completed in 3054.12 seconds.
+
+/home/midhun/Downloads/seqClassifierIn.py:146: UserWarning: FigureCanvasAgg is non-interactive and thus cannot be shown
+plt.show()
+
+Testing completed in 3.19 seconds.
+Accuracy: 0.9375
+Misclassification Error Rate: 0.0625
+
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+     Class 0       0.94      0.94      0.94 	 93
+     Class 1       0.94      0.94      0.94      83
+
+    accuracy                           0.94	 176
+   macro avg       0.94      0.94      0.94      176
+weighted avg       0.94      0.94      0.94      176
