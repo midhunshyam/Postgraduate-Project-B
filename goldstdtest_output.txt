@@ -25,7 +25,7 @@ Name: count, dtype: int64
 Some weights of BertForSequenceClassification were not initialized from the model checkpoint and are newly;
 You should probably TRAIN this model on a downstream task to be able to use it for predictions and inference.
 
-43.969003438949585
+Test time: 43.969003438949585
 [276 283] 
 [217 222]
 precision recall f1-score support
