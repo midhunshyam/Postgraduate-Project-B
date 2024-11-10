@@ -7,6 +7,9 @@
 train.csv
 Statistically evaluated dataset after refined text preprocessing for fine tuning seqClassifer.py
 
+## Preprocessing algorithm: mimiciii_datapreprocess.ipynb
+MIMIC-III dataset preprocessing and statistical analysis and evaluation and further data refinement
+
 ## Bio_ClinicalBERT - Preliminary modelling - premodel.ipynb
 Uses different train.csv located in priliminary modelling git branch with 44k observations; https://github.com/midhunshyam/PPB/blob/preliminarymodel/train.csv)
 
@@ -43,7 +46,4 @@ Final model: seqClassfier wts fined tuned on gold std
 finalmodel_testcm.png
 Final model - Test output (80-20split) gold std
 
-
-mimiciii_datapreprocess.ipynb
-MIMIC-III data preprocessing
 
