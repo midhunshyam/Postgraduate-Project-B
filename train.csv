@@ -1,3 +1,4 @@
 This train.csv has 12k from each class (kinetic accident and non-kinetic accident cases)
 Statistically evaluated and preprocessed, ensuring less than 512 input text tokens in each observation.
 Obtained from the last chunk of mimiciii_datapreprocess.ipynb algorithm.
+Final dataset used for finetuning (seqClassifer.py)
