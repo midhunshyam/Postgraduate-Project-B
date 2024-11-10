@@ -1,5 +1,5 @@
 # Load libraries
-
+# This script is used to fine-tune Bio_ClinicalBERT sequential classifer head (layer) and layer 11 of Bio_ClinicalBERT on the mimiciii_datapreprocess.ipynb final output data with 25k observations.
 import os
 import pandas as pd
 import torch
