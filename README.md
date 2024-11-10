@@ -43,6 +43,7 @@ Fine tuned model test output on gold standard data
 #### Final model 
 
 The pretrained Bio_ClinicalBERT undergoes fine-tuning twice - on MIMICIII extracted text and the goldstandard dataset to build the final model.
+The goldstandard dataset is not available as it is subject to privacy protection. Only outputs without any details about the gold standard dataset is available. The final fine-tuning data is domain specific. The gold standard which is used in this project is specific for the industry and the specific client, and cannot be generalised. Alteration to the algorithm and data mining techniques should be expected based on domain.
 
 finalmodel_goldstdtrainlosscurve.png
 Final model trained on Gold Standard data
