@@ -1,4 +1,4 @@
-# PPB Natural Language Tasks
+# Postgraduate Project B Natural Language Tasks
 ### Natural Language Processing for Clinical Notes
 
 ### Western Sydney University: School of Computer, Data and Mathematical Sciences
