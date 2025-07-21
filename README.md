@@ -42,7 +42,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
   - `GoldStandard-Fine-tune_Training_Loss_Curve.png`
   - `GoldStandard-Fine-tune_Validation_Confusion_Matrix.png`
 - **Outputs/**
-  - `MIMIC3__Training-Validation_Results.txt`
+  - `MIMIC3_Training-Validation_Results.txt`
   - `MIMIC3-Fine-tune_GoldStandard-Test_Results.txt`
   - `GoldStandard-Training-Validation_Results.txt`
 - **Docs/**
