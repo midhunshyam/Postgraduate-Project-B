@@ -28,27 +28,29 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 
 ## Directory Structure
 
+.
 ├── Data/
-│ └── MIMIC3_Train.csv
+│   └── MIMIC3_Train.csv
 ├── Notebooks/
-│ ├── 01_Preliminary_BioClinicalBERT_Modeling.ipynb
-│ └── 02_Data_Preprocessing_MIMICIII.ipynb
+│   ├── 01_Preliminary_BioClinicalBERT_Modeling.ipynb
+│   └── 02_Data_Preprocessing_MIMICIII.ipynb
 ├── Scripts/
-│ └── Sequence_Classifier.py
+│   └── Sequence_Classifier.py
 ├── Figures/
-│ ├── MIMIC3_Training_Loss_Curve.png
-│ ├── MIMIC3_Validation_Confusion_Matrix.png
-│ ├── MIMIC3-Fine-tune_Test_Confusion_Matrix.png
-│ ├── GoldStandard-Fine-tune_Training_Loss_Curve.png
-│ └── GoldStandard-Fine-tune_Validation_Confusion_Matrix.png
+│   ├── MIMIC3_Training_Loss_Curve.png
+│   ├── MIMIC3_Validation_Confusion_Matrix.png
+│   ├── MIMIC3-Fine-tune_Test_Confusion_Matrix.png
+│   ├── GoldStandard-Fine-tune_Training_Loss_Curve.png
+│   └── GoldStandard-Fine-tune_Validation_Confusion_Matrix.png
 ├── Outputs/
-│ ├── MIMIC3__Training-Validation_Results.txt
-│ ├── MIMIC3-Fine-tune_GoldStandard-Test_Results.txt
-│ └── GoldStandard-Training-Validation_Results.txt
+│   ├── MIMIC3__Training-Validation_Results.txt
+│   ├── MIMIC3-Fine-tune_GoldStandard-Test_Results.txt
+│   └── GoldStandard-Training-Validation_Results.txt
 ├── Docs/
-│ ├── MIMIC3_Data_Preprocessing_Report.pdf
-│ └── Postgraduate-Project-B-Report.pdf
+│   ├── MIMIC3_Data_Preprocessing_Report.pdf
+│   └── Postgraduate-Project-B-Report.pdf
 └── README.md
+
 
 
 ## Dataset
@@ -113,6 +115,6 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 References
 
 MIMIC‑III Clinical Database
-Johnson AEW, Pollard TJ, Shen L, et al. MIMIC‑III, a freely accessible critical care database. PhysioNet. Available at: https://mimic.physionet.org/
+Johnson AEW, Pollard TJ, Shen L, et al. MIMIC‑III, a freely accessible critical care database — PhysioNet. https://mimic.physionet.org/
 
-Alsentzer, Emily et al., "Publicly Available Clinical BERT Embeddings.” In Proceedings of the 2nd Clinical Natural Language Processing Workshop, Association for Computational Linguistics, June 2019. - arXiv preprint: https://arxiv.org/abs/1904.03323 
+Alsentzer, Emily et al., "Publicly Available Clinical BERT Embeddings”, In Proceedings of the 2nd Clinical Natural Language Processing Workshop, Association for Computational Linguistics, June 2019. https://arxiv.org/abs/1904.03323 
