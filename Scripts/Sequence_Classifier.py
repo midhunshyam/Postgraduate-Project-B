@@ -1,5 +1,23 @@
+"""
+Fine-Tune Script for Bio_ClinicalBERT Sequential Classifier
+
+Description:
+    This script fine-tunes Bio_ClinicalBERT on a domain-specific MIMIC-III dataset by:
+      1. Training the classifier head.
+      2. Unfreezing and training the last encoder layer (layer 11).
+    All other encoder layers remain frozen to preserve pre-trained representations.
+
+Input:
+    - Preprocessed MIMIC-III data (25,000 samples) produced by `mimiciii_datapreprocess.ipynb`.
+
+Output:
+    - A fine-tuned Bio_ClinicalBERT model with optimized classifier and last-layer weights.
+
+Usage:
+    python fine_tune_bioclinicalbert.py --data path/to/preprocessed_data.csv --epochs 5 --batch_size 16
+"""
+
 # Load libraries
-# This script is used to fine-tune Bio_ClinicalBERT sequential classifer head (layer) and layer 11 of Bio_ClinicalBERT on the mimiciii_datapreprocess.ipynb final output data with 25k observations.
 import os
 import pandas as pd
 import torch
