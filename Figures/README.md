@@ -1,5 +1,10 @@
 This directory includes all training and evaluation plots.
 
+The `Sequential_Classifier` model is fine-tuned with **only the last encoder layer and the classification head unfrozen**. All other encoder layers remain frozen throughout **training, validation, and testing**.
+
+This approach enables **targeted domain adaptation** while preserving the general language representations learned during pre-training.  
+It also helps in **reducing training time** and minimizing the risk of overfitting on small domain-specific datasets.
+
 ## MIMIC‑III Split (70% for training and 30% for validation)
 
 - `MIMIC3_Training_Loss_Curve.png`  
