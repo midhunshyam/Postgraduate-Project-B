@@ -1,57 +1,118 @@
-# Postgraduate Project B Natural Language Tasks
-### Natural Language Processing for Clinical Notes
+# Postgraduate Project B: Natural Language Processing for Clinical Notes
 
-### Western Sydney University: School of Computer, Data and Mathematical Sciences
+**Western Sydney University**  
+School of Computer, Data and Mathematical Sciences  
 
+## Table of Contents
 
-#### Dataset:
-train.csv
-Statistically evaluated dataset after refined text preprocessing for fine tuning seqClassifer.py
+1. [Overview](#overview)  
+2. [Directory Structure](#directory-structure)  
+3. [Dataset](#dataset)  
+4. [Data Preprocessing](#data-preprocessing)  
+5. [Preliminary Bio_ClinicalBERT Modeling](#preliminary-bio_clinicalbert-modeling)  
+6. [Sequence Classifier Fine‑Tuning](#sequence-classifier-fine-tuning)  
+7. [Model Evaluation](#model-evaluation)  
+8. [Final Model Workflow](#final-model-workflow)  
+9. [References](#references)  
 
-#### Preprocessing algorithm: preprocess_mimiciii.ipynb
-MIMIC-III dataset preprocessing and statistical analysis and evaluation and further data refinement
-mimiciii_datapreprocess.pdf contains the codes for MIMIC III Clinical Database data preprocessing (ipynb takes long time to load)
+## Overview
 
-#### Bio_ClinicalBERT - Preliminary modelling - premodel.ipynb
-Uses different train.csv located in priliminary modelling git branch with 44k observations; https://github.com/midhunshyam/PPB/blob/preliminarymodel/train.csv)
+This project implements a two‑stage fine‑tuning pipeline for clinical note classification using Bio_ClinicalBERT and a downstream sequence classifier. I:
 
-
-#### Finetuning algorithm - Sequential Classifier (seqClassifier)
-
-seqClassifier.py
-Model finetuning algorithm
-
-seqClassifier_losscurve.png
-Sequential classifier (finetuned model) training loss curve
-
-seqClassifier_output.txt
-Output from running seqClassifier.py
-
-seqClassifier_testconfusionmatrix.png
-seqClassifier test confusion matrix (70-30split)
+1. **Preprocess** the MIMIC‑III clinical notes.  
+2. **Pre‑train** Bio_ClinicalBERT on a larger dataset (44 k samples).  
+3. **Fine‑tune** a sequence classifier on preprocessed MIMIC‑III data.  
+4. **Evaluate** on held‑out MIMIC‑III splits (70‑30 train‑test & validation).  
+5. **Fine‑tune again** on a private gold‑standard dataset and evaluate final performance.
 
 
-#### Finetuned model testing (seqClassifier on gold standard)
+## Directory Structure
 
-goldstdtest_finetuned.png
-Goldstd test CM final tuned (seqClassifier.py)
+├── Data/
+│ └── MIMIC3_Train.csv
+├── Notebooks/
+│ ├── 01_Preliminary_BioClinicalBERT_Modeling.ipynb
+│ └── 02_Data_Preprocessing_MIMICIII.ipynb
+├── Scripts/
+│ └── Sequence_Classifier.py
+├── Figures/
+│ ├── MIMIC3_Training_Loss_Curve.png
+│ ├── MIMIC3_Validation_Confusion_Matrix.png
+│ ├── MIMIC3-Fine-tune_Test_Confusion_Matrix.png
+│ ├── GoldStandard-Fine-tune_Training_Loss_Curve.png
+│ └── GoldStandard-Fine-tune_Validation_Confusion_Matrix.png
+├── Outputs/
+│ ├── MIMIC3__Training-Validation_Results.txt
+│ ├── MIMIC3-Fine-tune_GoldStandard-Test_Results.txt
+│ └── GoldStandard-Training-Validation_Results.txt
+├── Docs/
+│ ├── MIMIC3_Data_Preprocessing_Report.pdf
+│ └── Postgraduate-Project-B-Report.pdf
+└── README.md
 
-goldstdtest_output.txt
-Fine tuned model test output on gold standard data
+
+## Dataset
+
+- **`Data/MIMIC3_Train.csv`**  
+  Refined, preprocessed MIMIC‑III clinical-note dataset (after tokenization, filtering, and feature engineering). Used for sequence classifier fine‑tuning.
+
+## Data Preprocessing
+
+1. Open **`Notebooks/02_Data_Preprocessing_MIMICIII.ipynb`** for the full preprocessing pipeline:  
+   - Loading raw MIMIC‑III records.  
+   - Text cleaning, tokenization, stop‑word removal.  
+   - Statistical analysis and data refinement.  
+2. A PDF summary of the code and results is in **`Docs/MIMIC3_Data_Preprocessing_Report.pdf`**.
 
 
-#### Final model 
+## Preliminary Bio_ClinicalBERT Modeling
 
-The pretrained Bio_ClinicalBERT undergoes fine-tuning twice - on MIMICIII extracted text and the goldstandard dataset to build the final model.
-The goldstandard dataset is not available as it is subject to privacy protection. Only outputs without any details about the gold standard dataset is available. The final fine-tuning data is domain specific. The gold standard which is used in this project is specific for the industry and the specific client, and cannot be generalised. Alteration to the algorithm and data mining techniques should be expected based on domain.
-
-finalmodel_goldstdtrainlosscurve.png
-Final model trained on Gold Standard data
-
-finalmodel_output.txt
-Final model: seqClassfier wts fined tuned on gold std
-
-finalmodel_testcm.png
-Final model - Test output (80-20split) gold std
+- **Notebook:** `Notebooks/01_Preliminary_BioClinicalBERT_Modeling.ipynb`  
+- **Purpose:** Pre‑train Bio_ClinicalBERT on an external 44 k‑sample train set to warm‑start downstream tasks.  
+- **Data:** Separate `train.csv` on the `preliminarymodel` branch (44 k observations).
 
 
+## Sequence Classifier Fine‑Tuning
+
+- **Script:** `Scripts/Sequence_Classifier.py`  
+- **Description:** Loads `MIMIC3_Train.csv`, fine‑tunes Bio_ClinicalBERT representations with a classification head.  
+- **Hyperparameters & arguments** are defined at the top of the script.
+
+
+## Model Evaluation
+
+### MIMIC‑III Split (70‑30 train‑test + validation)
+- **Training Loss Curve:**  
+  `Figures/MIMIC3_Training_Loss_Curve.png`  
+- **Validation Confusion Matrix:**  
+  `Figures/MIMIC3_Validation_Confusion_Matrix.png`  
+- **Results (train & validation metrics):**  
+  `Outputs/MIMIC3__Training-Validation_Results.txt`  
+- **Test Confusion Matrix (held‑out 30%):**  
+  `Figures/MIMIC3-Fine-tune_Test_Confusion_Matrix.png`  
+- **Test Metrics:**  
+  `Outputs/MIMIC3-Fine-tune_GoldStandard-Test_Results.txt`
+
+### Gold‑Standard Fine‑Tuning & Evaluation
+- **Fine‑Tuning Loss Curve:**  
+  `Figures/GoldStandard-Fine-tune_Training_Loss_Curve.png`  
+- **Validation Confusion Matrix:**  
+  `Figures/GoldStandard-Fine-tune_Validation_Confusion_Matrix.png`  
+- **Training & Validation Metrics:**  
+  `Outputs/GoldStandard-Training-Validation_Results.txt`
+
+
+## Final Model Workflow
+
+1. **Initial fine‑tuning** on MIMIC‑III (as above).  
+2. **Secondary fine‑tuning** on proprietary gold‑standard data—results cannot expose raw data.  
+3. **Performance** is summarized in the gold‑standard validation outputs and metrics above.  
+4. **Privacy Note:** Gold‑standard dataset is private; only model outputs and metrics are included.
+
+
+References
+
+MIMIC‑III Clinical Database
+Johnson AEW, Pollard TJ, Shen L, et al. MIMIC‑III, a freely accessible critical care database. PhysioNet. Available at: https://mimic.physionet.org/
+
+Alsentzer, Emily et al., "Publicly Available Clinical BERT Embeddings.” In Proceedings of the 2nd Clinical Natural Language Processing Workshop, Association for Computational Linguistics, June 2019. - arXiv preprint: https://arxiv.org/abs/1904.03323 
