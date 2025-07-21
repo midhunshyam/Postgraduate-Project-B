@@ -9,7 +9,7 @@ This directory includes all training and evaluation plots.
   Confusion matrix illustrating the performance of the `Sequential_Classifier` on the 30% validation split of the MIMIC-III dataset.
 
 ## MIMIC-III Fine-Tuned Sequential_Classifier Evaluation on Gold-Standard Hospital Data
-- `MIMIC3-Fine-tune_Test_Confusion_Matrix.png`  
+- `MIMIC3-Fine-tune_GoldStandard-Test_Confusion_Matrix.png`  
   Confusion matrix showing the performance of the Sequential_Classifier on the Gold-Standard Test Set immediately after fine-tuning on MIMIC-III data. This evaluation serves as a baseline before further domain-specific fine-tuning using the Private Hospital Annotated Dataset (Gold-Standard Set).
 
 ## Gold‑Standard Fine‑Tuning 
