@@ -1,7 +1,9 @@
 # Postgraduate Project B: Natural Language Processing for Clinical Notes
 
-**Western Sydney University**  
+**Western Sydney University** 
+
 School of Computer, Data and Mathematical Sciences
+
 
 Date: November 2024
 
