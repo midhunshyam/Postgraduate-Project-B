@@ -22,7 +22,7 @@ This phase involves further fine-tuning the model on a Private Hospital Annotate
 - `GoldStandard-Fine-tune_Validation_Confusion_Matrix.png`  
   Confusion matrix evaluating model predictions on the Gold-Standard validation set, reflecting classification performance after domain adaptation.
 
-###Summary of Purpose:
+### Summary of Purpose:
 
 This step ensures the `Sequential_Classifier` moves from general clinical language (MIMIC-III) to the target institution’s data distribution, improving real-world applicability.
 
