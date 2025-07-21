@@ -2,7 +2,7 @@ This directory holds Jupyter notebooks demonstrating data preprocessing and prel
 
 ## Notebooks
 
-## 1. `Data_Preprocessing_MIMICIII.ipynb`
+### 1. `Data_Preprocessing_MIMICIII.ipynb`
 
 ### **Full MIMIC-III Data Preprocessing Pipeline**
 
@@ -23,6 +23,6 @@ This directory holds Jupyter notebooks demonstrating data preprocessing and prel
    - Performing statistical checks, distribution analysis, and refining labels to ensure data quality and consistency before model training.
 
    
-2. `Preliminary_BioClinicalBERT_Modeling.ipynb`  
+### 2. `Preliminary_BioClinicalBERT_Modeling.ipynb`  
    In the preliminary modeling stage, Bio_ClinicalBERT is pre-trained on a 44k-sample external dataset to initialize the classifier head while keeping all encoder layers frozen.
 
