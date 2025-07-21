@@ -112,7 +112,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 4. **Privacy Note:** Gold‑standard dataset is private; only model outputs and metrics are included.
 
 
-References
+## References
 
 MIMIC‑III Clinical Database
 Johnson AEW, Pollard TJ, Shen L, et al. MIMIC‑III, a freely accessible critical care database — PhysioNet. https://mimic.physionet.org/
