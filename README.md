@@ -64,7 +64,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 
 ## Data Preprocessing
 
-1. Open **`Notebooks/02_Data_Preprocessing_MIMICIII.ipynb`** for the full preprocessing pipeline:  
+1. Open **`Notebooks/Data_Preprocessing_MIMICIII.ipynb`** for the full preprocessing pipeline:  
    - Loading raw MIMIC‑III records.  
    - Text cleaning, tokenization, stop‑word removal.  
    - Statistical analysis and data refinement.  
@@ -73,7 +73,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 
 ## Preliminary Bio_ClinicalBERT Modeling
 
-- **Notebook:** `Notebooks/01_Preliminary_BioClinicalBERT_Modeling.ipynb`  
+- **Notebook:** `Notebooks/Preliminary_BioClinicalBERT_Modeling.ipynb`  
 - **Purpose:** Pre‑train Bio_ClinicalBERT on an external 44 k‑sample train set to warm‑start downstream tasks.  
 - **Data:** Separate `train.csv` on the `preliminarymodel` branch (44 k observations).
 
@@ -81,7 +81,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 ## Sequence Classifier Fine‑Tuning
 
 - **Script:** `Scripts/Sequence_Classifier.py`  
-- **Description:** Loads `MIMIC3_Train.csv`, fine‑tunes Bio_ClinicalBERT representations with a classification head.  
+- **Description:** This script loads `MIMIC3_Train.csv` and fine-tunes `Bio_ClinicalBERT` by adding a classification head for downstream clinical prediction tasks. The model is trained with the last encoder layer unfrozen, allowing the fine-tuning of both the classification head and the final transformer block to better adapt the model to the target clinical dataset.
 - **Hyperparameters & arguments** are defined at the top of the script.
 
 
@@ -110,10 +110,14 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 
 ## Final Model Workflow
 
-1. **Initial fine‑tuning** on MIMIC‑III (as above).  
-2. **Secondary fine‑tuning** on proprietary gold‑standard data—results cannot expose raw data.  
-3. **Performance** is summarized in the gold‑standard validation outputs and metrics above.  
-4. **Privacy Note:** Gold‑standard dataset is private; only model outputs and metrics are included.
+1. **Initial fine‑tuning** Fine-tune Bio_ClinicalBERT on MIMIC3_Train.csv by training a classification head with the last encoder layer unfrozen. This step adapts Bio_ClinicalBERT representations to the specific clinical prediction task.
+2. **Evaluation and Metrics**
+Evaluate the fine-tuned model using held-out validation data. Track metrics such as accuracy, F1-score, precision, recall, and confusion matrix analysis to assess model performance.
+3.	**Model Saving and Deployment**
+Save the trained model checkpoint for future inference. The model can be deployed for clinical note classification, decision support systems, or further fine-tuning on related tasks.
+5. **Secondary fine‑tuning** on proprietary gold‑standard data—results cannot expose raw data.
+6. **Performance** is summarized in the gold‑standard validation outputs and metrics above.  
+7. **Privacy Note:** Gold‑standard dataset is private; only model outputs and metrics are included.
 
 
 ## References
