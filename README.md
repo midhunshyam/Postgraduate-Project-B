@@ -95,8 +95,8 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
   `Figures/MIMIC3_Validation_Confusion_Matrix.png`  
 - **Results (train & validation metrics):**  
   `Outputs/MIMIC3__Training-Validation_Results.txt`  
-- **Test Confusion Matrix (held‑out 30%):**  
-  `Figures/MIMIC3-Fine-tune_Test_Confusion_Matrix.png`  
+- **Test Confusion Matrix (held‑out on Gold-Standard hospital data):**  
+  `MIMIC3-Fine-tune_GoldStandard-Test_Confusion_Matrix.png`  
 - **Test Metrics:**  
   `Outputs/MIMIC3-Fine-tune_GoldStandard-Test_Results.txt`
 
