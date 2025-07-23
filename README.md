@@ -26,8 +26,9 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 1. **Preprocess** the MIMIC‑III clinical notes.  
 2. **Pre‑train** Bio_ClinicalBERT on a larger dataset (44 k samples).  
 3. **Fine‑tune** a sequence classifier on preprocessed MIMIC‑III data.  
-4. **Evaluate** on held‑out MIMIC‑III splits (70‑30 train‑validation).  
-5. **Fine‑tune again** on a private gold‑standard dataset and evaluate final performance.
+4. **Evaluate** on held‑out MIMIC‑III splits (70‑30 train‑validation).
+5. **Test** on the private gold-standard dataset for inference.
+6. **Fine‑tune again** on a private gold‑standard dataset and evaluate final performance.
 
 
 ## Directory Structure
