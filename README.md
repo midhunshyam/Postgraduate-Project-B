@@ -119,6 +119,23 @@ Save the trained model checkpoint for future inference. The model can be deploye
 6. **Performance** is summarized in the gold‑standard validation outputs and metrics above.  
 7. **Privacy Note:** Gold‑standard dataset is private; only model outputs and metrics are included.
 
+## Requirements
+
+Install dependencies using:
+
+```
+pip install -r requirements.txt
+```
+
+### requirements.txt
+
+pandas>=1.3.0
+torch>=1.12.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+transformers>=4.30.0
+
 
 ## References
 
