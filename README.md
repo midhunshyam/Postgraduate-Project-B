@@ -21,7 +21,7 @@ Date: November 2024
 
 ## Overview
 
-This project implements a two‑stage fine‑tuning pipeline for clinical note classification using Bio_ClinicalBERT and a downstream sequence classifier. I:
+This project implements a two‑stage fine‑tuning pipeline for clinical note classification using Bio_ClinicalBERT and a downstream sequence classifier. We:
 
 1. **Preprocess** the MIMIC‑III clinical notes.  
 2. **Pre‑train** Bio_ClinicalBERT on a larger dataset (44 k samples).  
