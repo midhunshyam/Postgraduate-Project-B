@@ -129,12 +129,12 @@ pip install -r requirements.txt
 
 ### requirements.txt
 
-pandas>=1.3.0
-torch>=1.12.0
-scikit-learn>=1.0.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
-transformers>=4.30.0
+pandas>=1.3.0 
+torch>=1.12.0 
+scikit-learn>=1.0.0 
+matplotlib>=3.4.0 
+seaborn>=0.11.0 
+transformers>=4.30.0 
 
 
 ## References
