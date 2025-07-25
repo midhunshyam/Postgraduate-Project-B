@@ -30,7 +30,7 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 5. **Test** on the private gold-standard dataset for inference.
 6. **Fine‑tune again** on a private gold‑standard dataset and evaluate final performance.
 
-The research report, located at `Docs/Postgraduate-Project-B-Report.pdf`, provides detailed insights into the methodology and structure of the repository.
+The research report, located at **`Docs/Postgraduate-Project-B-Report.pdf`**, provides detailed insights into the methodology and structure of the repository.
 
 ## Directory Structure
 
