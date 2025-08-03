@@ -8,7 +8,7 @@ School of Computer, Data and Mathematical Sciences
 Date: November 2024
 
 
-The research report, located at **`Docs/Postgraduate-Project-B-Report.pdf`**, provides detailed insights into the methodology and structure of the repository.
+The research report, located at **`Docs/Postgraduate-Project-B-Report.pdf`**, provides detailed insights into the methodology and items in this repository.
 
 ## Table of Contents
 
