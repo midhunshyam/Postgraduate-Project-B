@@ -7,6 +7,9 @@ School of Computer, Data and Mathematical Sciences
 
 Date: November 2024
 
+
+The research report, located at **`Docs/Postgraduate-Project-B-Report.pdf`**, provides detailed insights into the methodology and structure of the repository.
+
 ## Table of Contents
 
 1. [Overview](#overview)  
@@ -29,8 +32,6 @@ This project implements a two‑stage fine‑tuning pipeline for clinical note c
 4. **Evaluate** on held‑out MIMIC‑III splits (70‑30 train‑validation).
 5. **Test** on the private gold-standard dataset for inference.
 6. **Fine‑tune again** on a private gold‑standard dataset and evaluate final performance.
-
-The research report, located at **`Docs/Postgraduate-Project-B-Report.pdf`**, provides detailed insights into the methodology and structure of the repository.
 
 ## Directory Structure
 
